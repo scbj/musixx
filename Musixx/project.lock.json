@@ -48,7 +48,7 @@
           "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.Drive.v3/1.13.0.483": {
+      "Google.Apis.Drive.v3/1.13.0.498": {
         "type": "package",
         "dependencies": {
           "Google.Apis": "1.13.0",
@@ -2057,6 +2057,15 @@
           }
         }
       },
+      "TagLib.Portable/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
+        }
+      },
       "Zlib.Portable.Signed/1.11.0": {
         "type": "package",
         "compile": {
@@ -2113,7 +2122,7 @@
           "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.Drive.v3/1.13.0.483": {
+      "Google.Apis.Drive.v3/1.13.0.498": {
         "type": "package",
         "dependencies": {
           "Google.Apis": "1.13.0",
@@ -3988,6 +3997,15 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "TagLib.Portable/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
+        }
+      },
       "Zlib.Portable.Signed/1.11.0": {
         "type": "package",
         "compile": {
@@ -4044,7 +4062,7 @@
           "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.Drive.v3/1.13.0.483": {
+      "Google.Apis.Drive.v3/1.13.0.498": {
         "type": "package",
         "dependencies": {
           "Google.Apis": "1.13.0",
@@ -5876,6 +5894,15 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "TagLib.Portable/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
+        }
+      },
       "Zlib.Portable.Signed/1.11.0": {
         "type": "package",
         "compile": {
@@ -5932,7 +5959,7 @@
           "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.Drive.v3/1.13.0.483": {
+      "Google.Apis.Drive.v3/1.13.0.498": {
         "type": "package",
         "dependencies": {
           "Google.Apis": "1.13.0",
@@ -7816,6 +7843,15 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "TagLib.Portable/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
+        }
+      },
       "Zlib.Portable.Signed/1.11.0": {
         "type": "package",
         "compile": {
@@ -7872,7 +7908,7 @@
           "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.Drive.v3/1.13.0.483": {
+      "Google.Apis.Drive.v3/1.13.0.498": {
         "type": "package",
         "dependencies": {
           "Google.Apis": "1.13.0",
@@ -9704,6 +9740,15 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "TagLib.Portable/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
+        }
+      },
       "Zlib.Portable.Signed/1.11.0": {
         "type": "package",
         "compile": {
@@ -9760,7 +9805,7 @@
           "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.Drive.v3/1.13.0.483": {
+      "Google.Apis.Drive.v3/1.13.0.498": {
         "type": "package",
         "dependencies": {
           "Google.Apis": "1.13.0",
@@ -11644,6 +11689,15 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "TagLib.Portable/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
+        }
+      },
       "Zlib.Portable.Signed/1.11.0": {
         "type": "package",
         "compile": {
@@ -11700,7 +11754,7 @@
           "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.Drive.v3/1.13.0.483": {
+      "Google.Apis.Drive.v3/1.13.0.498": {
         "type": "package",
         "dependencies": {
           "Google.Apis": "1.13.0",
@@ -13532,6 +13586,15 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "TagLib.Portable/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
+        }
+      },
       "Zlib.Portable.Signed/1.11.0": {
         "type": "package",
         "compile": {
@@ -13631,11 +13694,11 @@
         "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.xml"
       ]
     },
-    "Google.Apis.Drive.v3/1.13.0.483": {
-      "sha512": "6XI4n24K1m0q1oF6QsD+soK2V4izjMmWSVF5MrzHCYYGDcFkQEVs463gPk0NgXDsGTVg252DiN4bQfBO6vcNZQ==",
+    "Google.Apis.Drive.v3/1.13.0.498": {
+      "sha512": "W5ONyEU9wMd9/VEwD0tkgtFzW/3P5FyUoga/lG5+gKxoDwa85heqZekBwU7sGd/+OqXY9kgZX1Oq2VvDKJBn3A==",
       "type": "package",
       "files": [
-        "Google.Apis.Drive.v3.1.13.0.483.nupkg.sha512",
+        "Google.Apis.Drive.v3.1.13.0.498.nupkg.sha512",
         "Google.Apis.Drive.v3.nuspec",
         "lib/portable-net40+sl50+netcore45+wpa81+wp8/Google.Apis.Drive.v3.dll",
         "lib/portable-net40+sl50+netcore45+wpa81+wp8/Google.Apis.Drive.v3.pdb",
@@ -17214,6 +17277,15 @@
         "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
     },
+    "TagLib.Portable/1.0.4": {
+      "sha512": "c/Van3wkeEhN2TtQH8soZdD+vixe/ZsczC9ciRXgEY6txp1TlaIEzHtiRxQGZPVVXWFlxXcl0pn/vqr0nYVD3w==",
+      "type": "package",
+      "files": [
+        "TagLib.Portable.1.0.4.nupkg.sha512",
+        "TagLib.Portable.nuspec",
+        "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll"
+      ]
+    },
     "Zlib.Portable.Signed/1.11.0": {
       "sha512": "1f4itCxlSBxU8kf85qUmx1+d0iHKLeZK8S7ilb4w0t+uV+/xtOUUVOEAnFMG5uHVBc7L+ycZjWQoA+a1GZKYjg==",
       "type": "package",
@@ -17227,12 +17299,13 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Google.Apis.Drive.v3 >= 1.13.0.483",
+      "Google.Apis.Drive.v3 >= 1.13.0.498",
       "Google.Apis.Oauth2.v2 >= 1.13.0.454",
       "Microsoft.ApplicationInsights >= 2.0.1",
       "Microsoft.ApplicationInsights.PersistenceChannel >= 1.2.3",
       "Microsoft.ApplicationInsights.WindowsApps >= 1.1.1",
-      "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0"
+      "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
+      "TagLib.Portable >= 1.0.4"
     ],
     "UAP,Version=v10.0": []
   }

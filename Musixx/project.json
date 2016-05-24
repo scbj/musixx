@@ -1,11 +1,12 @@
 ﻿{
   "dependencies": {
-    "Google.Apis.Drive.v3": "1.13.0.483",
+    "Google.Apis.Drive.v3": "1.13.0.498",
     "Google.Apis.Oauth2.v2": "1.13.0.454",
     "Microsoft.ApplicationInsights": "2.0.1",
     "Microsoft.ApplicationInsights.PersistenceChannel": "1.2.3",
     "Microsoft.ApplicationInsights.WindowsApps": "1.1.1",
-    "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
+    "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
+    "TagLib.Portable": "1.0.4"
   },
   "frameworks": {
     "uap10.0": {}

@@ -63,12 +63,25 @@ namespace Musixx.Clouds
             return true;
         }
 
+
         public Task<bool> Logout() => credential.RevokeTokenAsync(CancellationToken.None);
 
         public async Task<User> GetUser()
         {
             var userInfoPlus = await Oauth2Service.Userinfo.Get().ExecuteAsync();
             return new User(userInfoPlus.Name, userInfoPlus.Picture);
+        }
+        public async Task<List<Music>> GetMusics()
+        {
+            FilesResource.ListRequest listRequest = DriveService.Files.List();
+            listRequest.PageSize = 20;
+            listRequest.Fields = "nextPageToken, files(id, name, fileExtension)";
+            listRequest.Q = "mimeType = 'audio/mp3'";
+
+            var fileList = await listRequest.ExecuteAsync();
+
+            return fileList.Files.Select(f => new Music(f.Name.Replace("." + f.FileExtension, ""),
+                "https://www.googleapis.com/drive/v3/files/" + f.Id + "?alt=media&access_token=" + accessToken)).ToList();
         }
     }
 }

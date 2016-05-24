@@ -1,4 +1,5 @@
-﻿using Musixx.ViewModels;
+﻿using Musixx.Models;
+using Musixx.ViewModels;
 using MVVM.Pattern__UWP_.View;
 using System;
 using System.Collections.Generic;
@@ -37,5 +38,7 @@ namespace Musixx.Views
             get { return ViewModel; }
             set { ViewModel = (MainViewModel)value; }
         }
+
+        public void SetMusics(IEnumerable<Music> musics) => listView_Musics.ItemsSource = musics;
     }
 }

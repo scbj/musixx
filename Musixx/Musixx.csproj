@@ -102,6 +102,7 @@
     <Compile Include="Clouds\GoogleDrive.cs" />
     <Compile Include="Converters\NullableBoolToVisibilityConverter.cs" />
     <Compile Include="Converters\NullableBoolToLoginStateConverter.cs" />
+    <Compile Include="Models\Music.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />

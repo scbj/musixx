@@ -38,7 +38,11 @@ namespace Musixx.ViewModels
                 LoginState = await cloud.Login();
 
             if (loginState.Value)
+            {
                 User = await cloud.GetUser();
+                View.SetMusics(await cloud.GetMusics());
+
+            }
         }
 
         public MainView View { get; set; }
