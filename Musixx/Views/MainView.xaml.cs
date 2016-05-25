@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // Pour plus d'informations sur le modèle d'élément Page vierge, voir la page http://go.microsoft.com/fwlink/?LinkId=234238
@@ -40,5 +41,16 @@ namespace Musixx.Views
         }
 
         public void SetMusics(IEnumerable<Music> musics) => listView_Musics.ItemsSource = musics;
+
+        private void listView_Musics_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+        {
+            var music = (MusicViewModel)this.listView_Musics.SelectedItem;
+            music.IsPlaying = true;
+            if (ViewModel.CurrentPlaying != null)
+                ViewModel.CurrentPlaying.IsPlaying = false;
+            ViewModel.CurrentPlaying = music;
+            mediaElement.Source = music.Uri;
+            mediaElement.Play();
+        }
     }
 }

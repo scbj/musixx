@@ -10,6 +10,8 @@
         <ResourceDictionary>
             <converters:NullableBoolToLoginStateConverter x:Key="NullableBoolToLoginStateConverter"/>
             <converters:NullableBoolToVisibilityConverter x:Key="NullableBoolToVisibilityConverter"/>
+            <converters:TimeSpanFormatConverter x:Key="TimeSpanFormatConverter"/>
+            <converters:InverseBooleanConverter x:Key="InverseBooleanConverter"/>
         </ResourceDictionary>
     </Application.Resources>
 

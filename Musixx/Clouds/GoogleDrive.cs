@@ -1,6 +1,6 @@
 ﻿using Google.Apis.Auth.OAuth2;
 using Google.Apis.Auth.OAuth2.Responses;
-using Google.Apis.Drive.v3;
+using Google.Apis.Drive.v2;
 using Google.Apis.Oauth2.v2;
 using Google.Apis.Services;
 using Musixx.Models;
@@ -39,7 +39,7 @@ namespace Musixx.Clouds
             try
             {
                 credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(clientSecretUri, Scopes, "user", CancellationToken.None);
-                bool refreshSuccess = await credential.RefreshTokenAsync(CancellationToken.None);
+                await credential.RefreshTokenAsync(CancellationToken.None);
             }
             catch (TokenResponseException e)
             {
@@ -71,17 +71,19 @@ namespace Musixx.Clouds
             var userInfoPlus = await Oauth2Service.Userinfo.Get().ExecuteAsync();
             return new User(userInfoPlus.Name, userInfoPlus.Picture);
         }
-        public async Task<List<Music>> GetMusics()
+        public async Task<IEnumerable<Music>> GetMusics()
         {
             FilesResource.ListRequest listRequest = DriveService.Files.List();
-            listRequest.PageSize = 20;
-            listRequest.Fields = "nextPageToken, files(id, name, fileExtension)";
-            listRequest.Q = "mimeType = 'audio/mp3'";
+            listRequest.MaxResults = 1000;
+            listRequest.Fields = "items(downloadUrl,fileExtension,fileSize,id,title)";
+            listRequest.Q = "mimeType='audio/mp3' and trashed=false";
 
             var fileList = await listRequest.ExecuteAsync();
 
-            return fileList.Files.Select(f => new Music(f.Name.Replace("." + f.FileExtension, ""),
-                "https://www.googleapis.com/drive/v3/files/" + f.Id + "?alt=media&access_token=" + accessToken)).ToList();
+            var baseUrl = "https://googledrive.com/host/";
+
+            return fileList.Items.Select(f => new Music(f.Title, baseUrl + f.Id + "?access_token=" + accessToken,
+                f.FileSize.HasValue ? f.FileSize.Value : 0));
         }
     }
 }

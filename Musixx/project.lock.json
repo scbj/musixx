@@ -48,17 +48,17 @@
           "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.Drive.v3/1.13.0.498": {
+      "Google.Apis.Drive.v2/1.13.0.498": {
         "type": "package",
         "dependencies": {
           "Google.Apis": "1.13.0",
           "Google.Apis.Auth": "1.13.0"
         },
         "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v3.dll": {}
+          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v3.dll": {}
+          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
         }
       },
       "Google.Apis.Oauth2.v2/1.13.0.454": {
@@ -2122,17 +2122,17 @@
           "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.Drive.v3/1.13.0.498": {
+      "Google.Apis.Drive.v2/1.13.0.498": {
         "type": "package",
         "dependencies": {
           "Google.Apis": "1.13.0",
           "Google.Apis.Auth": "1.13.0"
         },
         "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v3.dll": {}
+          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v3.dll": {}
+          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
         }
       },
       "Google.Apis.Oauth2.v2/1.13.0.454": {
@@ -4062,17 +4062,17 @@
           "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.Drive.v3/1.13.0.498": {
+      "Google.Apis.Drive.v2/1.13.0.498": {
         "type": "package",
         "dependencies": {
           "Google.Apis": "1.13.0",
           "Google.Apis.Auth": "1.13.0"
         },
         "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v3.dll": {}
+          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v3.dll": {}
+          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
         }
       },
       "Google.Apis.Oauth2.v2/1.13.0.454": {
@@ -5959,17 +5959,17 @@
           "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.Drive.v3/1.13.0.498": {
+      "Google.Apis.Drive.v2/1.13.0.498": {
         "type": "package",
         "dependencies": {
           "Google.Apis": "1.13.0",
           "Google.Apis.Auth": "1.13.0"
         },
         "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v3.dll": {}
+          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v3.dll": {}
+          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
         }
       },
       "Google.Apis.Oauth2.v2/1.13.0.454": {
@@ -7908,17 +7908,17 @@
           "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.Drive.v3/1.13.0.498": {
+      "Google.Apis.Drive.v2/1.13.0.498": {
         "type": "package",
         "dependencies": {
           "Google.Apis": "1.13.0",
           "Google.Apis.Auth": "1.13.0"
         },
         "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v3.dll": {}
+          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v3.dll": {}
+          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
         }
       },
       "Google.Apis.Oauth2.v2/1.13.0.454": {
@@ -9805,17 +9805,17 @@
           "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.Drive.v3/1.13.0.498": {
+      "Google.Apis.Drive.v2/1.13.0.498": {
         "type": "package",
         "dependencies": {
           "Google.Apis": "1.13.0",
           "Google.Apis.Auth": "1.13.0"
         },
         "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v3.dll": {}
+          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v3.dll": {}
+          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
         }
       },
       "Google.Apis.Oauth2.v2/1.13.0.454": {
@@ -11754,17 +11754,17 @@
           "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.Drive.v3/1.13.0.498": {
+      "Google.Apis.Drive.v2/1.13.0.498": {
         "type": "package",
         "dependencies": {
           "Google.Apis": "1.13.0",
           "Google.Apis.Auth": "1.13.0"
         },
         "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v3.dll": {}
+          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v3.dll": {}
+          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
         }
       },
       "Google.Apis.Oauth2.v2/1.13.0.454": {
@@ -13694,18 +13694,18 @@
         "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.xml"
       ]
     },
-    "Google.Apis.Drive.v3/1.13.0.498": {
-      "sha512": "W5ONyEU9wMd9/VEwD0tkgtFzW/3P5FyUoga/lG5+gKxoDwa85heqZekBwU7sGd/+OqXY9kgZX1Oq2VvDKJBn3A==",
+    "Google.Apis.Drive.v2/1.13.0.498": {
+      "sha512": "Ins+1EkRcqvvGz/nyRFQPGiRqgNIl9vtthwkyIh9vI/efr4Fa2xqou9lVg2Vy7MsyHvaPGYlH1OZUJfAUUo2Cw==",
       "type": "package",
       "files": [
-        "Google.Apis.Drive.v3.1.13.0.498.nupkg.sha512",
-        "Google.Apis.Drive.v3.nuspec",
-        "lib/portable-net40+sl50+netcore45+wpa81+wp8/Google.Apis.Drive.v3.dll",
-        "lib/portable-net40+sl50+netcore45+wpa81+wp8/Google.Apis.Drive.v3.pdb",
-        "lib/portable-net40+sl50+netcore45+wpa81+wp8/Google.Apis.Drive.v3.xml",
-        "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v3.dll",
-        "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v3.pdb",
-        "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v3.xml"
+        "Google.Apis.Drive.v2.1.13.0.498.nupkg.sha512",
+        "Google.Apis.Drive.v2.nuspec",
+        "lib/portable-net40+sl50+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll",
+        "lib/portable-net40+sl50+netcore45+wpa81+wp8/Google.Apis.Drive.v2.pdb",
+        "lib/portable-net40+sl50+netcore45+wpa81+wp8/Google.Apis.Drive.v2.xml",
+        "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.pdb",
+        "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.xml"
       ]
     },
     "Google.Apis.Oauth2.v2/1.13.0.454": {
@@ -17299,7 +17299,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Google.Apis.Drive.v3 >= 1.13.0.498",
+      "Google.Apis.Drive.v2 >= 1.13.0.498",
       "Google.Apis.Oauth2.v2 >= 1.13.0.454",
       "Microsoft.ApplicationInsights >= 2.0.1",
       "Microsoft.ApplicationInsights.PersistenceChannel >= 1.2.3",

@@ -4,10 +4,12 @@ using Musixx.Views;
 using MVVM.Pattern__UWP_.ViewModel;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Windows.UI.Xaml.Data;
 
 namespace Musixx.ViewModels
 {
@@ -21,6 +23,8 @@ namespace Musixx.ViewModels
         private GoogleDrive cloud;
         private bool? loginState = false;
         private User user;
+        private ObservableCollection<MusicViewModel> musics;
+        private MusicViewModel currentPlaying;
 
         public MainViewModel()
         {
@@ -40,8 +44,7 @@ namespace Musixx.ViewModels
             if (loginState.Value)
             {
                 User = await cloud.GetUser();
-                View.SetMusics(await cloud.GetMusics());
-
+                Musics = new ObservableCollection<MusicViewModel>((await cloud.GetMusics()).Select(m => new MusicViewModel(m)));
             }
         }
 
@@ -66,6 +69,26 @@ namespace Musixx.ViewModels
             {
                 user = value;
                 OnPropertyChanged(nameof(User));
+            }
+        }
+
+        public ObservableCollection<MusicViewModel> Musics
+        {
+            get { return this.musics; }
+            set
+            {
+                this.musics = value;
+                OnPropertyChanged(nameof(Musics));
+            }
+        }
+
+        public MusicViewModel CurrentPlaying
+        {
+            get { return this.currentPlaying; }
+            set
+            {
+                this.currentPlaying = value;
+                OnPropertyChanged(nameof(CurrentPlaying));
             }
         }
 
