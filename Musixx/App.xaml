@@ -11,7 +11,9 @@
             <converters:NullableBoolToLoginStateConverter x:Key="NullableBoolToLoginStateConverter"/>
             <converters:NullableBoolToVisibilityConverter x:Key="NullableBoolToVisibilityConverter"/>
             <converters:TimeSpanFormatConverter x:Key="TimeSpanFormatConverter"/>
+            <converters:TimeSpanToDoubleConverter x:Key="TimeSpanToDoubleConverter"/>
             <converters:InverseBooleanConverter x:Key="InverseBooleanConverter"/>
+            <converters:BoolToPlayPauseConverter x:Key="BoolToPlayPauseConverter"/>
         </ResourceDictionary>
     </Application.Resources>
 

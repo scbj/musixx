@@ -74,7 +74,7 @@ namespace Musixx.Clouds
         public async Task<IEnumerable<Music>> GetMusics()
         {
             FilesResource.ListRequest listRequest = DriveService.Files.List();
-            listRequest.MaxResults = 1000;
+            listRequest.MaxResults = 12;
             listRequest.Fields = "items(downloadUrl,fileExtension,fileSize,id,title)";
             listRequest.Q = "mimeType='audio/mp3' and trashed=false";
 

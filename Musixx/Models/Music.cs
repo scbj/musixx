@@ -13,9 +13,11 @@ using Windows.Web.Http;
 
 namespace Musixx.Models
 {
-    public class Music
+    public class Music : IMusic
     {
         private string name;
+        private string id;
+        private string md5;
         private long size;
 
         public event Action MetadataRetreived;
@@ -63,7 +65,6 @@ namespace Musixx.Models
                 }
 
                 MetadataRetreived?.Invoke();
-
             }
             catch
             {

@@ -11,10 +11,9 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace Musixx.ViewModels
 {
-    public class MusicViewModel : ObservableObject
+    public class MusicViewModel : ObservableObject, IMusic
     {
         Music music;
-        private bool isPlaying;
 
         public string Title { get { return music.Title; } }
         public string Artist { get { return music.Artist; } }
@@ -22,15 +21,6 @@ namespace Musixx.ViewModels
         public TimeSpan Duration { get { return music.Duration; } }
         public BitmapImage Cover { get { return music.Cover; } }
         public Uri Uri { get { return music.Uri; } }
-        public bool IsPlaying
-        {
-            get { return isPlaying; }
-            set
-            {
-                isPlaying = value;
-                OnPropertyChanged(nameof(IsPlaying));
-            }
-        }
 
 
         public MusicViewModel(Music music)
