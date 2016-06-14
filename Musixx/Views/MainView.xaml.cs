@@ -26,37 +26,11 @@ namespace Musixx.Views
     /// </summary>
     public sealed partial class MainView : Page, IView<MainViewModel>
     {
-        private bool mediaPlayerIsPlaying = false;
-        private bool userIsDraggingSlider = false;
-
         public MainView()
         {
             DataContext = ViewModel = new MainViewModel();
             this.InitializeComponent();
             ViewModel.View = this;
-
-            var timer = new DispatcherTimer();
-            timer.Interval = TimeSpan.FromMilliseconds(100);
-            timer.Tick += Timer_Tick;
-            timer.Start();
-            
-            this.slider.AddHandler(Thumb.PointerPressedEvent, new PointerEventHandler(SliderThumbPressed), true);
-            this.slider.AddHandler(Thumb.PointerReleasedEvent, new PointerEventHandler(SliderThumbReleased), true);
-        }
-
-        private void Timer_Tick(object sender, object e)
-        {
-            if (mediaElement.Source != null && mediaPlayerIsPlaying && !userIsDraggingSlider)
-            {
-                slider.Value = mediaElement.Position.TotalSeconds;
-                txt_Value.Text = mediaElement.Position.ToString(@"m\:ss");
-            }
-
-            if (mediaPlayerIsPlaying)
-                btn_PlayPause.Content = '\uE769';
-            else
-                btn_PlayPause.Content = '\uE768';
-
         }
 
         public MainViewModel ViewModel { get; set; }
@@ -69,37 +43,19 @@ namespace Musixx.Views
         private void listView_Musics_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
         {
             var music = (MusicViewModel)this.listView_Musics.SelectedItem;
-            Play(music);
+            audioPlayer.Play(music);
         }
 
         private void Play(MusicViewModel music)
         {
-            slider.Value = 0;
-            slider.Maximum = music.Duration.TotalSeconds;
-            txt_Maximum.Text = music.Duration.ToString(@"m\:ss");
-            mediaElement.Source = music.Uri;
-            mediaElement.Play();
+            //slider.Value = 0;
+            //slider.Maximum = music.Duration.TotalSeconds;
+            //txt_Maximum.Text = music.Duration.ToString(@"m\:ss");
+            //mediaElement.Source = music.Uri;
+            //mediaElement.Play();
             
-            ViewModel.CurrentPlaying = music;
-            mediaPlayerIsPlaying = true;
-        }
-        
-        public void SliderThumbPressed(object sender, PointerRoutedEventArgs e) => userIsDraggingSlider = true;
-        public void SliderThumbReleased(object sender, PointerRoutedEventArgs e)
-        {
-            //Value = (sender as Slider).Value;
-            mediaElement.Position = TimeSpan.FromSeconds(slider.Value);
-            userIsDraggingSlider = false;
-        }
-
-        private void btn_PlayPause_Click(object sender, RoutedEventArgs e)
-        {
-            if (mediaPlayerIsPlaying)
-                mediaElement.Pause();
-            else
-                mediaElement.Play();
-
-            mediaPlayerIsPlaying = !mediaPlayerIsPlaying;
+            //ViewModel.CurrentPlaying = music;
+            //mediaPlayerIsPlaying = true;
         }
     }
 }

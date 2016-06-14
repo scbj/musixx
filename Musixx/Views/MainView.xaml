@@ -5,6 +5,7 @@
     xmlns:local="using:Musixx.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Musixx.Controls"
     xmlns:viewModels="using:Musixx.ViewModels"
     xmlns:views="using:Musixx.Views"
     mc:Ignorable="d">
@@ -73,51 +74,6 @@
         </Grid>
 
         <!--Media Controller-->
-        <Grid Grid.Row="1" Grid.ColumnSpan="2" RequestedTheme="Dark" Background="#FF212121">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition MinWidth="260" Width="0.3*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="Auto"/>
-            </Grid.ColumnDefinitions>
-
-            <StackPanel Orientation="Horizontal">
-                <Image Source="{Binding CurrentPlaying.Cover, TargetNullValue=ms-appx:///Assets/default_album.png}" Width="70" Height="70" Margin="8"/>
-                <Grid Margin="12,0,0,0">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-
-                    <TextBlock Text="{Binding CurrentPlaying.Title}" ToolTipService.ToolTip="{Binding Text, RelativeSource={RelativeSource Self}}" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FFA54955"/>
-                    <TextBlock Text="{Binding CurrentPlaying.Artist}" ToolTipService.ToolTip="{Binding Text, RelativeSource={RelativeSource Self}}" Grid.Row="1" VerticalAlignment="Top" FontWeight="Light" FontSize="14"/>
-                </Grid>
-            </StackPanel>
-            <Grid Grid.Column="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="60"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="60"/>
-                </Grid.ColumnDefinitions>
-
-                <TextBlock x:Name="txt_Value" Text="0:00" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <Slider x:Name="slider" Grid.Column="1" VerticalAlignment="Center"/>
-                <TextBlock x:Name="txt_Maximum" Text="9:99" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Grid>
-            <StackPanel Orientation="Horizontal" Grid.Column="2" Margin="12,0">
-                <StackPanel.Resources>
-                    <Style TargetType="Button">
-                        <Setter Property="FontFamily" Value="Segoe MDL2 Assets"/>
-                        <Setter Property="Background" Value="Transparent"/>
-                        <Setter Property="Margin" Value="8"/>
-                    </Style>
-                </StackPanel.Resources>
-                <Button Content="&#xE892;"/>
-                <Button x:Name="btn_PlayPause" Content="&#xE768;" Click="btn_PlayPause_Click"/>
-                <Button Content="&#xE893;"/>
-                <Button Content="&#xE767;"/>
-                <Button Content="&#xE8B1;"/>
-                <Button Content="&#xE8EE;"/>
-            </StackPanel>
-        </Grid>
+        <controls:AudioPlayerControl x:Name="audioPlayer" Grid.Row="1" Grid.ColumnSpan="2" RequestedTheme="Dark"/>
     </Grid>
 </Page>

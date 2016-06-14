@@ -14,6 +14,8 @@ namespace Musixx.Extensions
         public async static Task<BitmapImage> ToBitmapImage(this byte[] bytes)
         {
             var bitmap = new BitmapImage();
+            bitmap.DecodePixelType = DecodePixelType.Logical;
+            bitmap.DecodePixelHeight = bitmap.DecodePixelWidth = 70;
             using (var stream = new InMemoryRandomAccessStream())
             {
                 await stream.WriteAsync(bytes.AsBuffer());

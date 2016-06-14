@@ -14,6 +14,7 @@
             <converters:TimeSpanToDoubleConverter x:Key="TimeSpanToDoubleConverter"/>
             <converters:InverseBooleanConverter x:Key="InverseBooleanConverter"/>
             <converters:BoolToPlayPauseConverter x:Key="BoolToPlayPauseConverter"/>
+            <converters:SecondFormatConverter x:Key="SecondFormatConverter"/>
         </ResourceDictionary>
     </Application.Resources>
 

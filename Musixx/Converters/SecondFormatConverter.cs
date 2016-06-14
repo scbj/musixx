@@ -7,11 +7,11 @@ using Windows.UI.Xaml.Data;
 
 namespace Musixx.Converters
 {
-    public class BoolToPlayPauseConverter : IValueConverter
+    public class SecondFormatConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {
-            return (bool)value ? '\uE769' : '\uE768';
+            return TimeSpan.FromSeconds((double)value).ToString(@"m\:ss");
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)

@@ -107,8 +107,10 @@
     <Compile Include="Converters\InverseBooleanConverter.cs" />
     <Compile Include="Converters\NullableBoolToVisibilityConverter.cs" />
     <Compile Include="Converters\NullableBoolToLoginStateConverter.cs" />
+    <Compile Include="Converters\SecondFormatConverter.cs" />
     <Compile Include="Converters\TimeSpanFormatConverter.cs" />
     <Compile Include="Converters\TimeSpanToDoubleConverter.cs" />
+    <Compile Include="Data\ID3.cs" />
     <Compile Include="Extensions\ByteExtension.cs" />
     <Compile Include="Models\IMusic.cs" />
     <Compile Include="Models\Music.cs" />

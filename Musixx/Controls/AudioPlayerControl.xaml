@@ -9,10 +9,10 @@
     d:DesignHeight="86"
     d:DesignWidth="1280">
     <UserControl.Resources>
-        <MediaElement x:Name="player" AutoPlay="False" />
+        <MediaElement x:Name="player" AutoPlay="True" />
     </UserControl.Resources>
 
-    <Grid Grid.Row="1" Grid.ColumnSpan="2" RequestedTheme="Dark" Background="#FF212121">
+    <Grid  RequestedTheme="Dark" Background="#FF212121">
         <Grid.ColumnDefinitions>
             <ColumnDefinition MinWidth="260" Width="0.3*"/>
             <ColumnDefinition Width="*"/>
@@ -20,15 +20,15 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Orientation="Horizontal">
-            <Image Source="{Binding CurrentPlaying.Cover, TargetNullValue=ms-appx:///Assets/default_album.png}" Width="70" Height="70" Margin="8"/>
+            <Image x:Name="cover" Source="ms-appx:///Assets/default_album.png" Width="70" Height="70" Margin="8"/>
             <Grid Margin="12,0,0,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-                <TextBlock Text="{Binding CurrentPlaying.Title}" ToolTipService.ToolTip="{Binding Text, RelativeSource={RelativeSource Self}}" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FFA54955"/>
-                <TextBlock Text="{Binding CurrentPlaying.Artist}" ToolTipService.ToolTip="{Binding Text, RelativeSource={RelativeSource Self}}" Grid.Row="1" VerticalAlignment="Top" FontWeight="Light" FontSize="14"/>
+                <TextBlock x:Name="title" ToolTipService.ToolTip="{Binding Text, RelativeSource={RelativeSource Self}}" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FFA54955"/>
+                <TextBlock x:Name="artist" ToolTipService.ToolTip="{Binding Text, RelativeSource={RelativeSource Self}}" Grid.Row="1" VerticalAlignment="Top" FontWeight="Light" FontSize="14"/>
             </Grid>
         </StackPanel>
         <Grid Grid.Column="1">
@@ -39,11 +39,11 @@
             </Grid.ColumnDefinitions>
 
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"
-                       Text="{Binding Value, Converter={StaticResource TimeSpanFormatConverter}, FallbackValue='0:00'}"/>
+                       Text="{Binding Value, Converter={StaticResource SecondFormatConverter}, FallbackValue='0:00'}"/>
             <Slider x:Name="slider" Grid.Column="1" VerticalAlignment="Center"
-                    Value="{Binding Value, Mode=OneWay, Converter={StaticResource TimeSpanToDoubleConverter}, FallbackValue=0}"/>
+                    Value="{Binding Value, Mode=OneWay}" Maximum="{Binding Maximum}" ThumbToolTipValueConverter="{StaticResource SecondFormatConverter}"/>
             <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"
-                       Text="{Binding Maximum, Converter={StaticResource TimeSpanFormatConverter}}"/>
+                       Text="{Binding Maximum, Converter={StaticResource SecondFormatConverter}}"/>
         </Grid>
         <StackPanel Orientation="Horizontal" Grid.Column="2" Margin="12,0">
             <StackPanel.Resources>
@@ -54,7 +54,7 @@
                 </Style>
             </StackPanel.Resources>
             <Button Content="&#xE892;"/>
-            <Button Content="{Binding IsPlaying, Converter={StaticResource BoolToPlayPauseConverter}, FallbackValue=&#xE768;}"/>
+            <Button Command="{Binding PlayPauseCommand}" Content="{Binding IsPlaying, Converter={StaticResource BoolToPlayPauseConverter}, FallbackValue=&#xE768;}"/>
             <Button Content="&#xE893;"/>
             <Button Content="&#xE767;"/>
             <Button Content="&#xE8B1;"/>
