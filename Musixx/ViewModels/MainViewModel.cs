@@ -45,6 +45,7 @@ namespace Musixx.ViewModels
             {
                 User = await cloud.GetUser();
                 Musics = new ObservableCollection<MusicViewModel>((await cloud.GetMusics()).OrderBy(m => m.Title).Select(m => new MusicViewModel(m)));
+                
             }
         }
 

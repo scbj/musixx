@@ -3,149 +3,6 @@
   "version": 1,
   "targets": {
     "UAP,Version=v10.0": {
-      "Google.Apis/1.13.0": {
-        "dependencies": {
-          "Google.Apis.Core": "1.13.0",
-          "Zlib.Portable.Signed": "1.11.0"
-        },
-        "compile": {
-          "lib/win81/Google.Apis.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Google.Apis.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.dll": {}
-        }
-      },
-      "Google.Apis.Auth/1.13.0": {
-        "dependencies": {
-          "Google.Apis.Core": "1.13.0"
-        },
-        "compile": {
-          "lib/win81/Google.Apis.Auth.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.Auth.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Google.Apis.Auth.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.Auth.dll": {}
-        }
-      },
-      "Google.Apis.Core/1.13.0": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.10",
-          "Microsoft.Bcl.Async": "1.0.168",
-          "Microsoft.Bcl.Build": "1.0.21",
-          "Microsoft.Net.Http": "2.2.29",
-          "Newtonsoft.Json": "7.0.1"
-        },
-        "compile": {
-          "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
-        }
-      },
-      "Google.Apis.Drive.v2/1.13.0.498": {
-        "dependencies": {
-          "Google.Apis": "1.13.0",
-          "Google.Apis.Auth": "1.13.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
-        }
-      },
-      "Google.Apis.Oauth2.v2/1.13.0.454": {
-        "dependencies": {
-          "Google.Apis": "1.13.0",
-          "Google.Apis.Auth": "1.13.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Oauth2.v2.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Oauth2.v2.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights/2.0.1": {
-        "dependencies": {
-          "System.Collections": "4.0.10",
-          "System.Diagnostics.Debug": "4.0.10",
-          "System.Diagnostics.Tools": "4.0.0",
-          "System.Diagnostics.Tracing": "4.0.20",
-          "System.Globalization": "4.0.10",
-          "System.IO": "4.0.10",
-          "System.IO.Compression": "4.0.0",
-          "System.Linq": "4.0.0",
-          "System.Net.Http": "4.0.0",
-          "System.Reflection": "4.0.10",
-          "System.Reflection.Extensions": "4.0.0",
-          "System.Runtime": "4.0.20",
-          "System.Runtime.Extensions": "4.0.10",
-          "System.Text.Encoding": "4.0.10",
-          "System.Text.Encoding.Extensions": "4.0.10",
-          "System.Text.RegularExpressions": "4.0.10",
-          "System.Threading": "4.0.10",
-          "System.Threading.Tasks": "4.0.10",
-          "System.Xml.XDocument": "4.0.10"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.ApplicationInsights.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.ApplicationInsights.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.PersistenceChannel/1.2.3": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "1.2.3"
-        },
-        "compile": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.WindowsApps/1.1.1": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.2.3]",
-          "Microsoft.ApplicationInsights.PersistenceChannel": "[1.2.3]"
-        },
-        "compile": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        }
-      },
-      "Microsoft.Bcl/1.1.10": {
-        "dependencies": {
-          "Microsoft.Bcl.Build": "1.0.14"
-        },
-        "compile": {
-          "lib/win8/_._": {}
-        },
-        "runtime": {
-          "lib/win8/_._": {}
-        }
-      },
-      "Microsoft.Bcl.Async/1.0.168": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.8"
-        },
-        "compile": {
-          "lib/win8/Microsoft.Threading.Tasks.Extensions.dll": {},
-          "lib/win8/Microsoft.Threading.Tasks.dll": {}
-        },
-        "runtime": {
-          "lib/win8/Microsoft.Threading.Tasks.Extensions.dll": {},
-          "lib/win8/Microsoft.Threading.Tasks.dll": {}
-        }
-      },
-      "Microsoft.Bcl.Build/1.0.21": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -170,20 +27,6 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
-        }
-      },
-      "Microsoft.Net.Http/2.2.29": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.10",
-          "Microsoft.Bcl.Build": "1.0.14"
-        },
-        "compile": {
-          "lib/win8/System.Net.Http.Extensions.dll": {},
-          "lib/win8/System.Net.Http.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/win8/System.Net.Http.Extensions.dll": {},
-          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.0": {
@@ -334,14 +177,7 @@
           }
         }
       },
-      "Microsoft.NETCore.Runtime/1.0.1": {
-        "dependencies": {
-          "Microsoft.NETCore.Runtime.CoreCLR": "1.0.1",
-          "Microsoft.NETCore.Runtime.Native": "1.0.1"
-        }
-      },
-      "Microsoft.NETCore.Runtime.CoreCLR/1.0.1": {},
-      "Microsoft.NETCore.Runtime.Native/1.0.1": {},
+      "Microsoft.NETCore.Runtime/1.0.0": {},
       "Microsoft.NETCore.Targets/1.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.0",
@@ -349,11 +185,11 @@
         }
       },
       "Microsoft.NETCore.Targets.UniversalWindowsPlatform/5.0.0": {},
-      "Microsoft.NETCore.UniversalWindowsPlatform/5.1.0": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/5.0.0": {
         "dependencies": {
           "Microsoft.NETCore": "5.0.0",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.0",
-          "Microsoft.NETCore.Runtime": "1.0.1",
+          "Microsoft.NETCore.Runtime": "1.0.0",
           "Microsoft.Win32.Primitives": "4.0.0",
           "System.ComponentModel.EventBasedAsync": "4.0.10",
           "System.Data.Common": "4.0.0",
@@ -367,9 +203,9 @@
           "System.Numerics.Vectors.WindowsRuntime": "4.0.0",
           "System.Reflection.Context": "4.0.0",
           "System.Runtime.InteropServices.WindowsRuntime": "4.0.0",
-          "System.Runtime.Serialization.Json": "4.0.1",
-          "System.Runtime.Serialization.Primitives": "4.1.0",
-          "System.Runtime.Serialization.Xml": "4.1.0",
+          "System.Runtime.Serialization.Json": "4.0.0",
+          "System.Runtime.Serialization.Primitives": "4.0.10",
+          "System.Runtime.Serialization.Xml": "4.0.10",
           "System.Runtime.WindowsRuntime": "4.0.10",
           "System.Runtime.WindowsRuntime.UI.Xaml": "4.0.0",
           "System.ServiceModel.Duplex": "4.0.0",
@@ -417,14 +253,6 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
-        }
-      },
-      "Newtonsoft.Json/7.0.1": {
-        "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -1124,9 +952,38 @@
           "lib/dotnet/System.ObjectModel.dll": {}
         }
       },
-      "System.Private.DataContractSerialization/4.1.0": {
+      "System.Private.DataContractSerialization/4.0.0": {
+        "dependencies": {
+          "System.Collections": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.IO": "4.0.10",
+          "System.Linq": "4.0.0",
+          "System.Reflection": "4.0.10",
+          "System.Reflection.Extensions": "4.0.0",
+          "System.Reflection.Primitives": "4.0.0",
+          "System.Reflection.TypeExtensions": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Runtime.Serialization.Primitives": "4.0.10",
+          "System.Text.Encoding": "4.0.10",
+          "System.Text.Encoding.Extensions": "4.0.10",
+          "System.Text.RegularExpressions": "4.0.10",
+          "System.Threading": "4.0.10",
+          "System.Xml.ReaderWriter": "4.0.10",
+          "System.Xml.XmlSerializer": "4.0.10"
+        },
         "compile": {
           "ref/netcore50/_._": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Private.DataContractSerialization.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win8-aot/lib/netcore50/System.Private.DataContractSerialization.dll": {
+            "assetType": "runtime",
+            "rid": "win8-aot"
+          }
         }
       },
       "System.Private.Networking/4.0.0": {
@@ -1481,11 +1338,9 @@
           "lib/netcore50/System.Runtime.Numerics.dll": {}
         }
       },
-      "System.Runtime.Serialization.Json/4.0.1": {
+      "System.Runtime.Serialization.Json/4.0.0": {
         "dependencies": {
-          "System.IO": "4.0.0",
-          "System.Private.DataContractSerialization": "4.1.0",
-          "System.Runtime": "4.0.0"
+          "System.Private.DataContractSerialization": "4.0.0"
         },
         "compile": {
           "ref/netcore50/System.Runtime.Serialization.Json.dll": {}
@@ -1500,35 +1355,25 @@
           }
         }
       },
-      "System.Runtime.Serialization.Primitives/4.1.0": {
+      "System.Runtime.Serialization.Primitives/4.0.10": {
         "dependencies": {
           "System.Resources.ResourceManager": "4.0.0",
           "System.Runtime": "4.0.20"
         },
         "compile": {
-          "ref/netcore50/System.Runtime.Serialization.Primitives.dll": {}
+          "ref/dotnet/System.Runtime.Serialization.Primitives.dll": {}
         },
         "runtime": {
-          "lib/netcore50/System.Runtime.Serialization.Primitives.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win8-aot/lib/netcore50/System.Runtime.Serialization.Primitives.dll": {
-            "assetType": "runtime",
-            "rid": "win8-aot"
-          }
+          "lib/dotnet/System.Runtime.Serialization.Primitives.dll": {}
         }
       },
-      "System.Runtime.Serialization.Xml/4.1.0": {
+      "System.Runtime.Serialization.Xml/4.0.10": {
         "dependencies": {
-          "System.IO": "4.0.0",
-          "System.Private.DataContractSerialization": "4.1.0",
-          "System.Runtime": "4.0.0",
-          "System.Runtime.Serialization.Primitives": "4.1.0",
-          "System.Text.Encoding": "4.0.0",
-          "System.Xml.ReaderWriter": "4.0.0"
+          "System.Private.DataContractSerialization": "4.0.0",
+          "System.Runtime.Serialization.Primitives": "4.0.10"
         },
         "compile": {
-          "ref/netcore50/System.Runtime.Serialization.Xml.dll": {}
+          "ref/dotnet/System.Runtime.Serialization.Xml.dll": {}
         },
         "runtime": {
           "lib/netcore50/System.Runtime.Serialization.Xml.dll": {}
@@ -1942,168 +1787,9 @@
             "rid": "win8-aot"
           }
         }
-      },
-      "TagLib.Portable/1.0.4": {
-        "compile": {
-          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
-        }
-      },
-      "Zlib.Portable.Signed/1.11.0": {
-        "compile": {
-          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
-        }
       }
     },
     "UAP,Version=v10.0/win10-arm": {
-      "Google.Apis/1.13.0": {
-        "dependencies": {
-          "Google.Apis.Core": "1.13.0",
-          "Zlib.Portable.Signed": "1.11.0"
-        },
-        "compile": {
-          "lib/win81/Google.Apis.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Google.Apis.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.dll": {}
-        }
-      },
-      "Google.Apis.Auth/1.13.0": {
-        "dependencies": {
-          "Google.Apis.Core": "1.13.0"
-        },
-        "compile": {
-          "lib/win81/Google.Apis.Auth.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.Auth.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Google.Apis.Auth.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.Auth.dll": {}
-        }
-      },
-      "Google.Apis.Core/1.13.0": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.10",
-          "Microsoft.Bcl.Async": "1.0.168",
-          "Microsoft.Bcl.Build": "1.0.21",
-          "Microsoft.Net.Http": "2.2.29",
-          "Newtonsoft.Json": "7.0.1"
-        },
-        "compile": {
-          "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
-        }
-      },
-      "Google.Apis.Drive.v2/1.13.0.498": {
-        "dependencies": {
-          "Google.Apis": "1.13.0",
-          "Google.Apis.Auth": "1.13.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
-        }
-      },
-      "Google.Apis.Oauth2.v2/1.13.0.454": {
-        "dependencies": {
-          "Google.Apis": "1.13.0",
-          "Google.Apis.Auth": "1.13.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Oauth2.v2.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Oauth2.v2.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights/2.0.1": {
-        "dependencies": {
-          "System.Collections": "4.0.10",
-          "System.Diagnostics.Debug": "4.0.10",
-          "System.Diagnostics.Tools": "4.0.0",
-          "System.Diagnostics.Tracing": "4.0.20",
-          "System.Globalization": "4.0.10",
-          "System.IO": "4.0.10",
-          "System.IO.Compression": "4.0.0",
-          "System.Linq": "4.0.0",
-          "System.Net.Http": "4.0.0",
-          "System.Reflection": "4.0.10",
-          "System.Reflection.Extensions": "4.0.0",
-          "System.Runtime": "4.0.20",
-          "System.Runtime.Extensions": "4.0.10",
-          "System.Text.Encoding": "4.0.10",
-          "System.Text.Encoding.Extensions": "4.0.10",
-          "System.Text.RegularExpressions": "4.0.10",
-          "System.Threading": "4.0.10",
-          "System.Threading.Tasks": "4.0.10",
-          "System.Xml.XDocument": "4.0.10"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.ApplicationInsights.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.ApplicationInsights.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.PersistenceChannel/1.2.3": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "1.2.3"
-        },
-        "compile": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.WindowsApps/1.1.1": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.2.3]",
-          "Microsoft.ApplicationInsights.PersistenceChannel": "[1.2.3]"
-        },
-        "compile": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        }
-      },
-      "Microsoft.Bcl/1.1.10": {
-        "dependencies": {
-          "Microsoft.Bcl.Build": "1.0.14"
-        },
-        "compile": {
-          "lib/win8/_._": {}
-        },
-        "runtime": {
-          "lib/win8/_._": {}
-        }
-      },
-      "Microsoft.Bcl.Async/1.0.168": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.8"
-        },
-        "compile": {
-          "lib/win8/Microsoft.Threading.Tasks.Extensions.dll": {},
-          "lib/win8/Microsoft.Threading.Tasks.dll": {}
-        },
-        "runtime": {
-          "lib/win8/Microsoft.Threading.Tasks.Extensions.dll": {},
-          "lib/win8/Microsoft.Threading.Tasks.dll": {}
-        }
-      },
-      "Microsoft.Bcl.Build/1.0.21": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -2128,20 +1814,6 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
-        }
-      },
-      "Microsoft.Net.Http/2.2.29": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.10",
-          "Microsoft.Bcl.Build": "1.0.14"
-        },
-        "compile": {
-          "lib/win8/System.Net.Http.Extensions.dll": {},
-          "lib/win8/System.Net.Http.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/win8/System.Net.Http.Extensions.dll": {},
-          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.0": {
@@ -2238,18 +1910,54 @@
           "lib/netcore50/System.dll": {}
         }
       },
-      "Microsoft.NETCore.Runtime/1.0.1": {
+      "Microsoft.NETCore.Runtime/1.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.Runtime.CoreCLR": "1.0.1",
-          "Microsoft.NETCore.Runtime.Native": "1.0.1"
+          "Microsoft.NETCore.Runtime.CoreCLR-arm": "1.0.0"
         }
       },
-      "Microsoft.NETCore.Runtime.CoreCLR/1.0.1": {
+      "Microsoft.NETCore.Runtime.CoreCLR-arm/1.0.0": {
         "dependencies": {
-          "runtime.win8-arm.Microsoft.NETCore.Runtime.CoreCLR": "1.0.1"
+          "System.Collections": "[4.0.10]",
+          "System.Diagnostics.Contracts": "[4.0.0]",
+          "System.Diagnostics.Debug": "[4.0.10]",
+          "System.Diagnostics.StackTrace": "[4.0.0]",
+          "System.Diagnostics.Tools": "[4.0.0]",
+          "System.Diagnostics.Tracing": "[4.0.20]",
+          "System.Globalization": "[4.0.10]",
+          "System.Globalization.Calendars": "[4.0.0]",
+          "System.IO": "[4.0.10]",
+          "System.ObjectModel": "[4.0.10]",
+          "System.Private.Uri": "[4.0.0]",
+          "System.Reflection": "[4.0.10]",
+          "System.Reflection.Extensions": "[4.0.0]",
+          "System.Reflection.Primitives": "[4.0.0]",
+          "System.Resources.ResourceManager": "[4.0.0]",
+          "System.Runtime": "[4.0.20]",
+          "System.Runtime.Extensions": "[4.0.10]",
+          "System.Runtime.Handles": "[4.0.0]",
+          "System.Runtime.InteropServices": "[4.0.20]",
+          "System.Text.Encoding": "[4.0.10]",
+          "System.Text.Encoding.Extensions": "[4.0.10]",
+          "System.Threading": "[4.0.10]",
+          "System.Threading.Tasks": "[4.0.10]",
+          "System.Threading.Timer": "[4.0.0]"
+        },
+        "compile": {
+          "ref/dotnet/_._": {}
+        },
+        "runtime": {
+          "runtimes/win8-arm/lib/dotnet/mscorlib.ni.dll": {}
+        },
+        "native": {
+          "runtimes/win8-arm/native/clretwrc.dll": {},
+          "runtimes/win8-arm/native/coreclr.dll": {},
+          "runtimes/win8-arm/native/dbgshim.dll": {},
+          "runtimes/win8-arm/native/mscordaccore.dll": {},
+          "runtimes/win8-arm/native/mscordbi.dll": {},
+          "runtimes/win8-arm/native/mscorrc.debug.dll": {},
+          "runtimes/win8-arm/native/mscorrc.dll": {}
         }
       },
-      "Microsoft.NETCore.Runtime.Native/1.0.1": {},
       "Microsoft.NETCore.Targets/1.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.0",
@@ -2257,11 +1965,11 @@
         }
       },
       "Microsoft.NETCore.Targets.UniversalWindowsPlatform/5.0.0": {},
-      "Microsoft.NETCore.UniversalWindowsPlatform/5.1.0": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/5.0.0": {
         "dependencies": {
           "Microsoft.NETCore": "5.0.0",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.0",
-          "Microsoft.NETCore.Runtime": "1.0.1",
+          "Microsoft.NETCore.Runtime": "1.0.0",
           "Microsoft.Win32.Primitives": "4.0.0",
           "System.ComponentModel.EventBasedAsync": "4.0.10",
           "System.Data.Common": "4.0.0",
@@ -2275,9 +1983,9 @@
           "System.Numerics.Vectors.WindowsRuntime": "4.0.0",
           "System.Reflection.Context": "4.0.0",
           "System.Runtime.InteropServices.WindowsRuntime": "4.0.0",
-          "System.Runtime.Serialization.Json": "4.0.1",
-          "System.Runtime.Serialization.Primitives": "4.1.0",
-          "System.Runtime.Serialization.Xml": "4.1.0",
+          "System.Runtime.Serialization.Json": "4.0.0",
+          "System.Runtime.Serialization.Primitives": "4.0.10",
+          "System.Runtime.Serialization.Xml": "4.0.10",
           "System.Runtime.WindowsRuntime": "4.0.10",
           "System.Runtime.WindowsRuntime.UI.Xaml": "4.0.0",
           "System.ServiceModel.Duplex": "4.0.0",
@@ -2325,64 +2033,6 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
-        }
-      },
-      "Newtonsoft.Json/7.0.1": {
-        "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
-        }
-      },
-      "runtime.any.System.Private.DataContractSerialization/4.1.0": {
-        "dependencies": {
-          "System.Collections": "4.0.10",
-          "System.Diagnostics.Debug": "4.0.10",
-          "System.Globalization": "4.0.10",
-          "System.IO": "4.0.10",
-          "System.Linq": "4.0.0",
-          "System.Reflection": "4.0.10",
-          "System.Reflection.Emit.ILGeneration": "4.0.0",
-          "System.Reflection.Emit.Lightweight": "4.0.0",
-          "System.Reflection.Extensions": "4.0.0",
-          "System.Reflection.Primitives": "4.0.0",
-          "System.Reflection.TypeExtensions": "4.0.0",
-          "System.Resources.ResourceManager": "4.0.0",
-          "System.Runtime": "4.0.20",
-          "System.Runtime.Extensions": "4.0.10",
-          "System.Runtime.Serialization.Primitives": "4.1.0",
-          "System.Text.Encoding": "4.0.10",
-          "System.Text.Encoding.Extensions": "4.0.10",
-          "System.Text.RegularExpressions": "4.0.10",
-          "System.Threading": "4.0.10",
-          "System.Threading.Tasks": "4.0.10",
-          "System.Xml.ReaderWriter": "4.0.10",
-          "System.Xml.XmlDocument": "4.0.0",
-          "System.Xml.XmlSerializer": "4.0.10"
-        },
-        "compile": {
-          "ref/dotnet/_._": {}
-        },
-        "runtime": {
-          "lib/netcore50/System.Private.DataContractSerialization.dll": {}
-        }
-      },
-      "runtime.win8-arm.Microsoft.NETCore.Runtime.CoreCLR/1.0.1": {
-        "compile": {
-          "ref/dotnet/_._": {}
-        },
-        "runtime": {
-          "runtimes/win8-arm/lib/dotnet/mscorlib.ni.dll": {}
-        },
-        "native": {
-          "runtimes/win8-arm/native/clretwrc.dll": {},
-          "runtimes/win8-arm/native/coreclr.dll": {},
-          "runtimes/win8-arm/native/dbgshim.dll": {},
-          "runtimes/win8-arm/native/mscordaccore.dll": {},
-          "runtimes/win8-arm/native/mscordbi.dll": {},
-          "runtimes/win8-arm/native/mscorrc.debug.dll": {},
-          "runtimes/win8-arm/native/mscorrc.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -3026,12 +2676,34 @@
           "lib/dotnet/System.ObjectModel.dll": {}
         }
       },
-      "System.Private.DataContractSerialization/4.1.0": {
+      "System.Private.DataContractSerialization/4.0.0": {
         "dependencies": {
-          "runtime.any.System.Private.DataContractSerialization": "4.1.0"
+          "System.Collections": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.IO": "4.0.10",
+          "System.Linq": "4.0.0",
+          "System.Reflection": "4.0.10",
+          "System.Reflection.Emit.ILGeneration": "4.0.0",
+          "System.Reflection.Emit.Lightweight": "4.0.0",
+          "System.Reflection.Extensions": "4.0.0",
+          "System.Reflection.Primitives": "4.0.0",
+          "System.Reflection.TypeExtensions": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Runtime.Serialization.Primitives": "4.0.10",
+          "System.Text.Encoding": "4.0.10",
+          "System.Text.Encoding.Extensions": "4.0.10",
+          "System.Text.RegularExpressions": "4.0.10",
+          "System.Threading": "4.0.10",
+          "System.Xml.ReaderWriter": "4.0.10",
+          "System.Xml.XmlSerializer": "4.0.10"
         },
         "compile": {
           "ref/netcore50/_._": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Private.DataContractSerialization.dll": {}
         }
       },
       "System.Private.Networking/4.0.0": {
@@ -3358,11 +3030,9 @@
           "lib/netcore50/System.Runtime.Numerics.dll": {}
         }
       },
-      "System.Runtime.Serialization.Json/4.0.1": {
+      "System.Runtime.Serialization.Json/4.0.0": {
         "dependencies": {
-          "System.IO": "4.0.0",
-          "System.Private.DataContractSerialization": "4.1.0",
-          "System.Runtime": "4.0.0"
+          "System.Private.DataContractSerialization": "4.0.0"
         },
         "compile": {
           "ref/netcore50/System.Runtime.Serialization.Json.dll": {}
@@ -3371,29 +3041,25 @@
           "lib/netcore50/System.Runtime.Serialization.Json.dll": {}
         }
       },
-      "System.Runtime.Serialization.Primitives/4.1.0": {
+      "System.Runtime.Serialization.Primitives/4.0.10": {
         "dependencies": {
           "System.Resources.ResourceManager": "4.0.0",
           "System.Runtime": "4.0.20"
         },
         "compile": {
-          "ref/netcore50/System.Runtime.Serialization.Primitives.dll": {}
+          "ref/dotnet/System.Runtime.Serialization.Primitives.dll": {}
         },
         "runtime": {
-          "lib/netcore50/System.Runtime.Serialization.Primitives.dll": {}
+          "lib/dotnet/System.Runtime.Serialization.Primitives.dll": {}
         }
       },
-      "System.Runtime.Serialization.Xml/4.1.0": {
+      "System.Runtime.Serialization.Xml/4.0.10": {
         "dependencies": {
-          "System.IO": "4.0.0",
-          "System.Private.DataContractSerialization": "4.1.0",
-          "System.Runtime": "4.0.0",
-          "System.Runtime.Serialization.Primitives": "4.1.0",
-          "System.Text.Encoding": "4.0.0",
-          "System.Xml.ReaderWriter": "4.0.0"
+          "System.Private.DataContractSerialization": "4.0.0",
+          "System.Runtime.Serialization.Primitives": "4.0.10"
         },
         "compile": {
-          "ref/netcore50/System.Runtime.Serialization.Xml.dll": {}
+          "ref/dotnet/System.Runtime.Serialization.Xml.dll": {}
         },
         "runtime": {
           "lib/netcore50/System.Runtime.Serialization.Xml.dll": {}
@@ -3761,168 +3427,9 @@
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "TagLib.Portable/1.0.4": {
-        "compile": {
-          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
-        }
-      },
-      "Zlib.Portable.Signed/1.11.0": {
-        "compile": {
-          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
-        }
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
-      "Google.Apis/1.13.0": {
-        "dependencies": {
-          "Google.Apis.Core": "1.13.0",
-          "Zlib.Portable.Signed": "1.11.0"
-        },
-        "compile": {
-          "lib/win81/Google.Apis.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Google.Apis.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.dll": {}
-        }
-      },
-      "Google.Apis.Auth/1.13.0": {
-        "dependencies": {
-          "Google.Apis.Core": "1.13.0"
-        },
-        "compile": {
-          "lib/win81/Google.Apis.Auth.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.Auth.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Google.Apis.Auth.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.Auth.dll": {}
-        }
-      },
-      "Google.Apis.Core/1.13.0": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.10",
-          "Microsoft.Bcl.Async": "1.0.168",
-          "Microsoft.Bcl.Build": "1.0.21",
-          "Microsoft.Net.Http": "2.2.29",
-          "Newtonsoft.Json": "7.0.1"
-        },
-        "compile": {
-          "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
-        }
-      },
-      "Google.Apis.Drive.v2/1.13.0.498": {
-        "dependencies": {
-          "Google.Apis": "1.13.0",
-          "Google.Apis.Auth": "1.13.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
-        }
-      },
-      "Google.Apis.Oauth2.v2/1.13.0.454": {
-        "dependencies": {
-          "Google.Apis": "1.13.0",
-          "Google.Apis.Auth": "1.13.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Oauth2.v2.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Oauth2.v2.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights/2.0.1": {
-        "dependencies": {
-          "System.Collections": "4.0.10",
-          "System.Diagnostics.Debug": "4.0.10",
-          "System.Diagnostics.Tools": "4.0.0",
-          "System.Diagnostics.Tracing": "4.0.20",
-          "System.Globalization": "4.0.10",
-          "System.IO": "4.0.10",
-          "System.IO.Compression": "4.0.0",
-          "System.Linq": "4.0.0",
-          "System.Net.Http": "4.0.0",
-          "System.Reflection": "4.0.10",
-          "System.Reflection.Extensions": "4.0.0",
-          "System.Runtime": "4.0.20",
-          "System.Runtime.Extensions": "4.0.10",
-          "System.Text.Encoding": "4.0.10",
-          "System.Text.Encoding.Extensions": "4.0.10",
-          "System.Text.RegularExpressions": "4.0.10",
-          "System.Threading": "4.0.10",
-          "System.Threading.Tasks": "4.0.10",
-          "System.Xml.XDocument": "4.0.10"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.ApplicationInsights.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.ApplicationInsights.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.PersistenceChannel/1.2.3": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "1.2.3"
-        },
-        "compile": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.WindowsApps/1.1.1": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.2.3]",
-          "Microsoft.ApplicationInsights.PersistenceChannel": "[1.2.3]"
-        },
-        "compile": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        }
-      },
-      "Microsoft.Bcl/1.1.10": {
-        "dependencies": {
-          "Microsoft.Bcl.Build": "1.0.14"
-        },
-        "compile": {
-          "lib/win8/_._": {}
-        },
-        "runtime": {
-          "lib/win8/_._": {}
-        }
-      },
-      "Microsoft.Bcl.Async/1.0.168": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.8"
-        },
-        "compile": {
-          "lib/win8/Microsoft.Threading.Tasks.Extensions.dll": {},
-          "lib/win8/Microsoft.Threading.Tasks.dll": {}
-        },
-        "runtime": {
-          "lib/win8/Microsoft.Threading.Tasks.Extensions.dll": {},
-          "lib/win8/Microsoft.Threading.Tasks.dll": {}
-        }
-      },
-      "Microsoft.Bcl.Build/1.0.21": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -3947,20 +3454,6 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
-        }
-      },
-      "Microsoft.Net.Http/2.2.29": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.10",
-          "Microsoft.Bcl.Build": "1.0.14"
-        },
-        "compile": {
-          "lib/win8/System.Net.Http.Extensions.dll": {},
-          "lib/win8/System.Net.Http.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/win8/System.Net.Http.Extensions.dll": {},
-          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.0": {
@@ -4058,14 +3551,39 @@
           "runtimes/aot/lib/netcore50/mscorlib.dll": {}
         }
       },
-      "Microsoft.NETCore.Runtime/1.0.1": {
+      "Microsoft.NETCore.Runtime/1.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.Runtime.CoreCLR": "1.0.1",
-          "Microsoft.NETCore.Runtime.Native": "1.0.1"
+          "Microsoft.NETCore.Runtime.Native": "1.0.0"
         }
       },
-      "Microsoft.NETCore.Runtime.CoreCLR/1.0.1": {},
-      "Microsoft.NETCore.Runtime.Native/1.0.1": {},
+      "Microsoft.NETCore.Runtime.Native/1.0.0": {
+        "dependencies": {
+          "System.Collections": "[4.0.10]",
+          "System.Diagnostics.Contracts": "[4.0.0]",
+          "System.Diagnostics.Debug": "[4.0.10]",
+          "System.Diagnostics.StackTrace": "[4.0.0]",
+          "System.Diagnostics.Tools": "[4.0.0]",
+          "System.Diagnostics.Tracing": "[4.0.20]",
+          "System.Globalization": "[4.0.10]",
+          "System.Globalization.Calendars": "[4.0.0]",
+          "System.IO": "[4.0.10]",
+          "System.ObjectModel": "[4.0.10]",
+          "System.Private.Uri": "[4.0.0]",
+          "System.Reflection": "[4.0.10]",
+          "System.Reflection.Extensions": "[4.0.0]",
+          "System.Reflection.Primitives": "[4.0.0]",
+          "System.Resources.ResourceManager": "[4.0.0]",
+          "System.Runtime": "[4.0.20]",
+          "System.Runtime.Extensions": "[4.0.10]",
+          "System.Runtime.Handles": "[4.0.0]",
+          "System.Runtime.InteropServices": "[4.0.20]",
+          "System.Text.Encoding": "[4.0.10]",
+          "System.Text.Encoding.Extensions": "[4.0.10]",
+          "System.Threading": "[4.0.10]",
+          "System.Threading.Tasks": "[4.0.10]",
+          "System.Threading.Timer": "[4.0.0]"
+        }
+      },
       "Microsoft.NETCore.Targets/1.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.0",
@@ -4073,11 +3591,11 @@
         }
       },
       "Microsoft.NETCore.Targets.UniversalWindowsPlatform/5.0.0": {},
-      "Microsoft.NETCore.UniversalWindowsPlatform/5.1.0": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/5.0.0": {
         "dependencies": {
           "Microsoft.NETCore": "5.0.0",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.0",
-          "Microsoft.NETCore.Runtime": "1.0.1",
+          "Microsoft.NETCore.Runtime": "1.0.0",
           "Microsoft.Win32.Primitives": "4.0.0",
           "System.ComponentModel.EventBasedAsync": "4.0.10",
           "System.Data.Common": "4.0.0",
@@ -4091,9 +3609,9 @@
           "System.Numerics.Vectors.WindowsRuntime": "4.0.0",
           "System.Reflection.Context": "4.0.0",
           "System.Runtime.InteropServices.WindowsRuntime": "4.0.0",
-          "System.Runtime.Serialization.Json": "4.0.1",
-          "System.Runtime.Serialization.Primitives": "4.1.0",
-          "System.Runtime.Serialization.Xml": "4.1.0",
+          "System.Runtime.Serialization.Json": "4.0.0",
+          "System.Runtime.Serialization.Primitives": "4.0.10",
+          "System.Runtime.Serialization.Xml": "4.0.10",
           "System.Runtime.WindowsRuntime": "4.0.10",
           "System.Runtime.WindowsRuntime.UI.Xaml": "4.0.0",
           "System.ServiceModel.Duplex": "4.0.0",
@@ -4141,45 +3659,6 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
-        }
-      },
-      "Newtonsoft.Json/7.0.1": {
-        "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
-        }
-      },
-      "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
-        "dependencies": {
-          "System.Collections": "4.0.10",
-          "System.Diagnostics.Debug": "4.0.10",
-          "System.Globalization": "4.0.10",
-          "System.IO": "4.0.10",
-          "System.Linq": "4.0.0",
-          "System.Reflection": "4.0.10",
-          "System.Reflection.Extensions": "4.0.0",
-          "System.Reflection.Primitives": "4.0.0",
-          "System.Reflection.TypeExtensions": "4.0.0",
-          "System.Resources.ResourceManager": "4.0.0",
-          "System.Runtime": "4.0.20",
-          "System.Runtime.Extensions": "4.0.10",
-          "System.Runtime.Serialization.Primitives": "4.1.0",
-          "System.Text.Encoding": "4.0.10",
-          "System.Text.Encoding.Extensions": "4.0.10",
-          "System.Text.RegularExpressions": "4.0.10",
-          "System.Threading": "4.0.10",
-          "System.Threading.Tasks": "4.0.10",
-          "System.Xml.ReaderWriter": "4.0.10",
-          "System.Xml.XmlDocument": "4.0.0",
-          "System.Xml.XmlSerializer": "4.0.10"
-        },
-        "compile": {
-          "ref/dotnet/_._": {}
-        },
-        "runtime": {
-          "runtimes/win8-aot/lib/netcore50/System.Private.DataContractSerialization.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -4819,12 +4298,32 @@
           "lib/dotnet/System.ObjectModel.dll": {}
         }
       },
-      "System.Private.DataContractSerialization/4.1.0": {
+      "System.Private.DataContractSerialization/4.0.0": {
         "dependencies": {
-          "runtime.aot.System.Private.DataContractSerialization": "4.1.0"
+          "System.Collections": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.IO": "4.0.10",
+          "System.Linq": "4.0.0",
+          "System.Reflection": "4.0.10",
+          "System.Reflection.Extensions": "4.0.0",
+          "System.Reflection.Primitives": "4.0.0",
+          "System.Reflection.TypeExtensions": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Runtime.Serialization.Primitives": "4.0.10",
+          "System.Text.Encoding": "4.0.10",
+          "System.Text.Encoding.Extensions": "4.0.10",
+          "System.Text.RegularExpressions": "4.0.10",
+          "System.Threading": "4.0.10",
+          "System.Xml.ReaderWriter": "4.0.10",
+          "System.Xml.XmlSerializer": "4.0.10"
         },
         "compile": {
           "ref/netcore50/_._": {}
+        },
+        "runtime": {
+          "runtimes/win8-aot/lib/netcore50/System.Private.DataContractSerialization.dll": {}
         }
       },
       "System.Private.Networking/4.0.0": {
@@ -5135,11 +4634,9 @@
           "lib/netcore50/System.Runtime.Numerics.dll": {}
         }
       },
-      "System.Runtime.Serialization.Json/4.0.1": {
+      "System.Runtime.Serialization.Json/4.0.0": {
         "dependencies": {
-          "System.IO": "4.0.0",
-          "System.Private.DataContractSerialization": "4.1.0",
-          "System.Runtime": "4.0.0"
+          "System.Private.DataContractSerialization": "4.0.0"
         },
         "compile": {
           "ref/netcore50/System.Runtime.Serialization.Json.dll": {}
@@ -5148,29 +4645,25 @@
           "runtimes/win8-aot/lib/netcore50/System.Runtime.Serialization.Json.dll": {}
         }
       },
-      "System.Runtime.Serialization.Primitives/4.1.0": {
+      "System.Runtime.Serialization.Primitives/4.0.10": {
         "dependencies": {
           "System.Resources.ResourceManager": "4.0.0",
           "System.Runtime": "4.0.20"
         },
         "compile": {
-          "ref/netcore50/System.Runtime.Serialization.Primitives.dll": {}
+          "ref/dotnet/System.Runtime.Serialization.Primitives.dll": {}
         },
         "runtime": {
-          "runtimes/win8-aot/lib/netcore50/System.Runtime.Serialization.Primitives.dll": {}
+          "lib/dotnet/System.Runtime.Serialization.Primitives.dll": {}
         }
       },
-      "System.Runtime.Serialization.Xml/4.1.0": {
+      "System.Runtime.Serialization.Xml/4.0.10": {
         "dependencies": {
-          "System.IO": "4.0.0",
-          "System.Private.DataContractSerialization": "4.1.0",
-          "System.Runtime": "4.0.0",
-          "System.Runtime.Serialization.Primitives": "4.1.0",
-          "System.Text.Encoding": "4.0.0",
-          "System.Xml.ReaderWriter": "4.0.0"
+          "System.Private.DataContractSerialization": "4.0.0",
+          "System.Runtime.Serialization.Primitives": "4.0.10"
         },
         "compile": {
-          "ref/netcore50/System.Runtime.Serialization.Xml.dll": {}
+          "ref/dotnet/System.Runtime.Serialization.Xml.dll": {}
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Runtime.Serialization.Xml.dll": {}
@@ -5538,168 +5031,9 @@
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "TagLib.Portable/1.0.4": {
-        "compile": {
-          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
-        }
-      },
-      "Zlib.Portable.Signed/1.11.0": {
-        "compile": {
-          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
-        }
       }
     },
     "UAP,Version=v10.0/win10-x64": {
-      "Google.Apis/1.13.0": {
-        "dependencies": {
-          "Google.Apis.Core": "1.13.0",
-          "Zlib.Portable.Signed": "1.11.0"
-        },
-        "compile": {
-          "lib/win81/Google.Apis.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Google.Apis.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.dll": {}
-        }
-      },
-      "Google.Apis.Auth/1.13.0": {
-        "dependencies": {
-          "Google.Apis.Core": "1.13.0"
-        },
-        "compile": {
-          "lib/win81/Google.Apis.Auth.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.Auth.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Google.Apis.Auth.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.Auth.dll": {}
-        }
-      },
-      "Google.Apis.Core/1.13.0": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.10",
-          "Microsoft.Bcl.Async": "1.0.168",
-          "Microsoft.Bcl.Build": "1.0.21",
-          "Microsoft.Net.Http": "2.2.29",
-          "Newtonsoft.Json": "7.0.1"
-        },
-        "compile": {
-          "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
-        }
-      },
-      "Google.Apis.Drive.v2/1.13.0.498": {
-        "dependencies": {
-          "Google.Apis": "1.13.0",
-          "Google.Apis.Auth": "1.13.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
-        }
-      },
-      "Google.Apis.Oauth2.v2/1.13.0.454": {
-        "dependencies": {
-          "Google.Apis": "1.13.0",
-          "Google.Apis.Auth": "1.13.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Oauth2.v2.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Oauth2.v2.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights/2.0.1": {
-        "dependencies": {
-          "System.Collections": "4.0.10",
-          "System.Diagnostics.Debug": "4.0.10",
-          "System.Diagnostics.Tools": "4.0.0",
-          "System.Diagnostics.Tracing": "4.0.20",
-          "System.Globalization": "4.0.10",
-          "System.IO": "4.0.10",
-          "System.IO.Compression": "4.0.0",
-          "System.Linq": "4.0.0",
-          "System.Net.Http": "4.0.0",
-          "System.Reflection": "4.0.10",
-          "System.Reflection.Extensions": "4.0.0",
-          "System.Runtime": "4.0.20",
-          "System.Runtime.Extensions": "4.0.10",
-          "System.Text.Encoding": "4.0.10",
-          "System.Text.Encoding.Extensions": "4.0.10",
-          "System.Text.RegularExpressions": "4.0.10",
-          "System.Threading": "4.0.10",
-          "System.Threading.Tasks": "4.0.10",
-          "System.Xml.XDocument": "4.0.10"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.ApplicationInsights.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.ApplicationInsights.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.PersistenceChannel/1.2.3": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "1.2.3"
-        },
-        "compile": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.WindowsApps/1.1.1": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.2.3]",
-          "Microsoft.ApplicationInsights.PersistenceChannel": "[1.2.3]"
-        },
-        "compile": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        }
-      },
-      "Microsoft.Bcl/1.1.10": {
-        "dependencies": {
-          "Microsoft.Bcl.Build": "1.0.14"
-        },
-        "compile": {
-          "lib/win8/_._": {}
-        },
-        "runtime": {
-          "lib/win8/_._": {}
-        }
-      },
-      "Microsoft.Bcl.Async/1.0.168": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.8"
-        },
-        "compile": {
-          "lib/win8/Microsoft.Threading.Tasks.Extensions.dll": {},
-          "lib/win8/Microsoft.Threading.Tasks.dll": {}
-        },
-        "runtime": {
-          "lib/win8/Microsoft.Threading.Tasks.Extensions.dll": {},
-          "lib/win8/Microsoft.Threading.Tasks.dll": {}
-        }
-      },
-      "Microsoft.Bcl.Build/1.0.21": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -5724,20 +5058,6 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
-        }
-      },
-      "Microsoft.Net.Http/2.2.29": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.10",
-          "Microsoft.Bcl.Build": "1.0.14"
-        },
-        "compile": {
-          "lib/win8/System.Net.Http.Extensions.dll": {},
-          "lib/win8/System.Net.Http.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/win8/System.Net.Http.Extensions.dll": {},
-          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.0": {
@@ -5834,18 +5154,55 @@
           "lib/netcore50/System.dll": {}
         }
       },
-      "Microsoft.NETCore.Runtime/1.0.1": {
+      "Microsoft.NETCore.Runtime/1.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.Runtime.CoreCLR": "1.0.1",
-          "Microsoft.NETCore.Runtime.Native": "1.0.1"
+          "Microsoft.NETCore.Runtime.CoreCLR-x64": "1.0.0",
+          "Microsoft.NETCore.Windows.ApiSets-x64": "1.0.0"
         }
       },
-      "Microsoft.NETCore.Runtime.CoreCLR/1.0.1": {
+      "Microsoft.NETCore.Runtime.CoreCLR-x64/1.0.0": {
         "dependencies": {
-          "runtime.win7-x64.Microsoft.NETCore.Runtime.CoreCLR": "1.0.1"
+          "System.Collections": "[4.0.10]",
+          "System.Diagnostics.Contracts": "[4.0.0]",
+          "System.Diagnostics.Debug": "[4.0.10]",
+          "System.Diagnostics.StackTrace": "[4.0.0]",
+          "System.Diagnostics.Tools": "[4.0.0]",
+          "System.Diagnostics.Tracing": "[4.0.20]",
+          "System.Globalization": "[4.0.10]",
+          "System.Globalization.Calendars": "[4.0.0]",
+          "System.IO": "[4.0.10]",
+          "System.ObjectModel": "[4.0.10]",
+          "System.Private.Uri": "[4.0.0]",
+          "System.Reflection": "[4.0.10]",
+          "System.Reflection.Extensions": "[4.0.0]",
+          "System.Reflection.Primitives": "[4.0.0]",
+          "System.Resources.ResourceManager": "[4.0.0]",
+          "System.Runtime": "[4.0.20]",
+          "System.Runtime.Extensions": "[4.0.10]",
+          "System.Runtime.Handles": "[4.0.0]",
+          "System.Runtime.InteropServices": "[4.0.20]",
+          "System.Text.Encoding": "[4.0.10]",
+          "System.Text.Encoding.Extensions": "[4.0.10]",
+          "System.Threading": "[4.0.10]",
+          "System.Threading.Tasks": "[4.0.10]",
+          "System.Threading.Timer": "[4.0.0]"
+        },
+        "compile": {
+          "ref/dotnet/_._": {}
+        },
+        "runtime": {
+          "runtimes/win7-x64/lib/dotnet/mscorlib.ni.dll": {}
+        },
+        "native": {
+          "runtimes/win7-x64/native/clretwrc.dll": {},
+          "runtimes/win7-x64/native/coreclr.dll": {},
+          "runtimes/win7-x64/native/dbgshim.dll": {},
+          "runtimes/win7-x64/native/mscordaccore.dll": {},
+          "runtimes/win7-x64/native/mscordbi.dll": {},
+          "runtimes/win7-x64/native/mscorrc.debug.dll": {},
+          "runtimes/win7-x64/native/mscorrc.dll": {}
         }
       },
-      "Microsoft.NETCore.Runtime.Native/1.0.1": {},
       "Microsoft.NETCore.Targets/1.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.0",
@@ -5853,11 +5210,11 @@
         }
       },
       "Microsoft.NETCore.Targets.UniversalWindowsPlatform/5.0.0": {},
-      "Microsoft.NETCore.UniversalWindowsPlatform/5.1.0": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/5.0.0": {
         "dependencies": {
           "Microsoft.NETCore": "5.0.0",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.0",
-          "Microsoft.NETCore.Runtime": "1.0.1",
+          "Microsoft.NETCore.Runtime": "1.0.0",
           "Microsoft.Win32.Primitives": "4.0.0",
           "System.ComponentModel.EventBasedAsync": "4.0.10",
           "System.Data.Common": "4.0.0",
@@ -5871,9 +5228,9 @@
           "System.Numerics.Vectors.WindowsRuntime": "4.0.0",
           "System.Reflection.Context": "4.0.0",
           "System.Runtime.InteropServices.WindowsRuntime": "4.0.0",
-          "System.Runtime.Serialization.Json": "4.0.1",
-          "System.Runtime.Serialization.Primitives": "4.1.0",
-          "System.Runtime.Serialization.Xml": "4.1.0",
+          "System.Runtime.Serialization.Json": "4.0.0",
+          "System.Runtime.Serialization.Primitives": "4.0.10",
+          "System.Runtime.Serialization.Xml": "4.0.10",
           "System.Runtime.WindowsRuntime": "4.0.10",
           "System.Runtime.WindowsRuntime.UI.Xaml": "4.0.0",
           "System.ServiceModel.Duplex": "4.0.0",
@@ -5928,67 +5285,6 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "Newtonsoft.Json/7.0.1": {
-        "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
-        }
-      },
-      "runtime.any.System.Private.DataContractSerialization/4.1.0": {
-        "dependencies": {
-          "System.Collections": "4.0.10",
-          "System.Diagnostics.Debug": "4.0.10",
-          "System.Globalization": "4.0.10",
-          "System.IO": "4.0.10",
-          "System.Linq": "4.0.0",
-          "System.Reflection": "4.0.10",
-          "System.Reflection.Emit.ILGeneration": "4.0.0",
-          "System.Reflection.Emit.Lightweight": "4.0.0",
-          "System.Reflection.Extensions": "4.0.0",
-          "System.Reflection.Primitives": "4.0.0",
-          "System.Reflection.TypeExtensions": "4.0.0",
-          "System.Resources.ResourceManager": "4.0.0",
-          "System.Runtime": "4.0.20",
-          "System.Runtime.Extensions": "4.0.10",
-          "System.Runtime.Serialization.Primitives": "4.1.0",
-          "System.Text.Encoding": "4.0.10",
-          "System.Text.Encoding.Extensions": "4.0.10",
-          "System.Text.RegularExpressions": "4.0.10",
-          "System.Threading": "4.0.10",
-          "System.Threading.Tasks": "4.0.10",
-          "System.Xml.ReaderWriter": "4.0.10",
-          "System.Xml.XmlDocument": "4.0.0",
-          "System.Xml.XmlSerializer": "4.0.10"
-        },
-        "compile": {
-          "ref/dotnet/_._": {}
-        },
-        "runtime": {
-          "lib/netcore50/System.Private.DataContractSerialization.dll": {}
-        }
-      },
-      "runtime.win7-x64.Microsoft.NETCore.Runtime.CoreCLR/1.0.1": {
-        "dependencies": {
-          "Microsoft.NETCore.Windows.ApiSets-x64": "1.0.0"
-        },
-        "compile": {
-          "ref/dotnet/_._": {}
-        },
-        "runtime": {
-          "runtimes/win7-x64/lib/dotnet/mscorlib.ni.dll": {}
-        },
-        "native": {
-          "runtimes/win7-x64/native/clretwrc.dll": {},
-          "runtimes/win7-x64/native/coreclr.dll": {},
-          "runtimes/win7-x64/native/dbgshim.dll": {},
-          "runtimes/win7-x64/native/mscordaccore.dll": {},
-          "runtimes/win7-x64/native/mscordbi.dll": {},
-          "runtimes/win7-x64/native/mscorrc.debug.dll": {},
-          "runtimes/win7-x64/native/mscorrc.dll": {}
-        }
-      },
       "System.AppContext/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.0",
@@ -6630,12 +5926,34 @@
           "lib/dotnet/System.ObjectModel.dll": {}
         }
       },
-      "System.Private.DataContractSerialization/4.1.0": {
+      "System.Private.DataContractSerialization/4.0.0": {
         "dependencies": {
-          "runtime.any.System.Private.DataContractSerialization": "4.1.0"
+          "System.Collections": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.IO": "4.0.10",
+          "System.Linq": "4.0.0",
+          "System.Reflection": "4.0.10",
+          "System.Reflection.Emit.ILGeneration": "4.0.0",
+          "System.Reflection.Emit.Lightweight": "4.0.0",
+          "System.Reflection.Extensions": "4.0.0",
+          "System.Reflection.Primitives": "4.0.0",
+          "System.Reflection.TypeExtensions": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Runtime.Serialization.Primitives": "4.0.10",
+          "System.Text.Encoding": "4.0.10",
+          "System.Text.Encoding.Extensions": "4.0.10",
+          "System.Text.RegularExpressions": "4.0.10",
+          "System.Threading": "4.0.10",
+          "System.Xml.ReaderWriter": "4.0.10",
+          "System.Xml.XmlSerializer": "4.0.10"
         },
         "compile": {
           "ref/netcore50/_._": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Private.DataContractSerialization.dll": {}
         }
       },
       "System.Private.Networking/4.0.0": {
@@ -6962,11 +6280,9 @@
           "lib/netcore50/System.Runtime.Numerics.dll": {}
         }
       },
-      "System.Runtime.Serialization.Json/4.0.1": {
+      "System.Runtime.Serialization.Json/4.0.0": {
         "dependencies": {
-          "System.IO": "4.0.0",
-          "System.Private.DataContractSerialization": "4.1.0",
-          "System.Runtime": "4.0.0"
+          "System.Private.DataContractSerialization": "4.0.0"
         },
         "compile": {
           "ref/netcore50/System.Runtime.Serialization.Json.dll": {}
@@ -6975,29 +6291,25 @@
           "lib/netcore50/System.Runtime.Serialization.Json.dll": {}
         }
       },
-      "System.Runtime.Serialization.Primitives/4.1.0": {
+      "System.Runtime.Serialization.Primitives/4.0.10": {
         "dependencies": {
           "System.Resources.ResourceManager": "4.0.0",
           "System.Runtime": "4.0.20"
         },
         "compile": {
-          "ref/netcore50/System.Runtime.Serialization.Primitives.dll": {}
+          "ref/dotnet/System.Runtime.Serialization.Primitives.dll": {}
         },
         "runtime": {
-          "lib/netcore50/System.Runtime.Serialization.Primitives.dll": {}
+          "lib/dotnet/System.Runtime.Serialization.Primitives.dll": {}
         }
       },
-      "System.Runtime.Serialization.Xml/4.1.0": {
+      "System.Runtime.Serialization.Xml/4.0.10": {
         "dependencies": {
-          "System.IO": "4.0.0",
-          "System.Private.DataContractSerialization": "4.1.0",
-          "System.Runtime": "4.0.0",
-          "System.Runtime.Serialization.Primitives": "4.1.0",
-          "System.Text.Encoding": "4.0.0",
-          "System.Xml.ReaderWriter": "4.0.0"
+          "System.Private.DataContractSerialization": "4.0.0",
+          "System.Runtime.Serialization.Primitives": "4.0.10"
         },
         "compile": {
-          "ref/netcore50/System.Runtime.Serialization.Xml.dll": {}
+          "ref/dotnet/System.Runtime.Serialization.Xml.dll": {}
         },
         "runtime": {
           "lib/netcore50/System.Runtime.Serialization.Xml.dll": {}
@@ -7365,168 +6677,9 @@
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "TagLib.Portable/1.0.4": {
-        "compile": {
-          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
-        }
-      },
-      "Zlib.Portable.Signed/1.11.0": {
-        "compile": {
-          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
-        }
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
-      "Google.Apis/1.13.0": {
-        "dependencies": {
-          "Google.Apis.Core": "1.13.0",
-          "Zlib.Portable.Signed": "1.11.0"
-        },
-        "compile": {
-          "lib/win81/Google.Apis.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Google.Apis.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.dll": {}
-        }
-      },
-      "Google.Apis.Auth/1.13.0": {
-        "dependencies": {
-          "Google.Apis.Core": "1.13.0"
-        },
-        "compile": {
-          "lib/win81/Google.Apis.Auth.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.Auth.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Google.Apis.Auth.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.Auth.dll": {}
-        }
-      },
-      "Google.Apis.Core/1.13.0": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.10",
-          "Microsoft.Bcl.Async": "1.0.168",
-          "Microsoft.Bcl.Build": "1.0.21",
-          "Microsoft.Net.Http": "2.2.29",
-          "Newtonsoft.Json": "7.0.1"
-        },
-        "compile": {
-          "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
-        }
-      },
-      "Google.Apis.Drive.v2/1.13.0.498": {
-        "dependencies": {
-          "Google.Apis": "1.13.0",
-          "Google.Apis.Auth": "1.13.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
-        }
-      },
-      "Google.Apis.Oauth2.v2/1.13.0.454": {
-        "dependencies": {
-          "Google.Apis": "1.13.0",
-          "Google.Apis.Auth": "1.13.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Oauth2.v2.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Oauth2.v2.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights/2.0.1": {
-        "dependencies": {
-          "System.Collections": "4.0.10",
-          "System.Diagnostics.Debug": "4.0.10",
-          "System.Diagnostics.Tools": "4.0.0",
-          "System.Diagnostics.Tracing": "4.0.20",
-          "System.Globalization": "4.0.10",
-          "System.IO": "4.0.10",
-          "System.IO.Compression": "4.0.0",
-          "System.Linq": "4.0.0",
-          "System.Net.Http": "4.0.0",
-          "System.Reflection": "4.0.10",
-          "System.Reflection.Extensions": "4.0.0",
-          "System.Runtime": "4.0.20",
-          "System.Runtime.Extensions": "4.0.10",
-          "System.Text.Encoding": "4.0.10",
-          "System.Text.Encoding.Extensions": "4.0.10",
-          "System.Text.RegularExpressions": "4.0.10",
-          "System.Threading": "4.0.10",
-          "System.Threading.Tasks": "4.0.10",
-          "System.Xml.XDocument": "4.0.10"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.ApplicationInsights.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.ApplicationInsights.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.PersistenceChannel/1.2.3": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "1.2.3"
-        },
-        "compile": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.WindowsApps/1.1.1": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.2.3]",
-          "Microsoft.ApplicationInsights.PersistenceChannel": "[1.2.3]"
-        },
-        "compile": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        }
-      },
-      "Microsoft.Bcl/1.1.10": {
-        "dependencies": {
-          "Microsoft.Bcl.Build": "1.0.14"
-        },
-        "compile": {
-          "lib/win8/_._": {}
-        },
-        "runtime": {
-          "lib/win8/_._": {}
-        }
-      },
-      "Microsoft.Bcl.Async/1.0.168": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.8"
-        },
-        "compile": {
-          "lib/win8/Microsoft.Threading.Tasks.Extensions.dll": {},
-          "lib/win8/Microsoft.Threading.Tasks.dll": {}
-        },
-        "runtime": {
-          "lib/win8/Microsoft.Threading.Tasks.Extensions.dll": {},
-          "lib/win8/Microsoft.Threading.Tasks.dll": {}
-        }
-      },
-      "Microsoft.Bcl.Build/1.0.21": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -7551,20 +6704,6 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
-        }
-      },
-      "Microsoft.Net.Http/2.2.29": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.10",
-          "Microsoft.Bcl.Build": "1.0.14"
-        },
-        "compile": {
-          "lib/win8/System.Net.Http.Extensions.dll": {},
-          "lib/win8/System.Net.Http.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/win8/System.Net.Http.Extensions.dll": {},
-          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.0": {
@@ -7662,14 +6801,39 @@
           "runtimes/aot/lib/netcore50/mscorlib.dll": {}
         }
       },
-      "Microsoft.NETCore.Runtime/1.0.1": {
+      "Microsoft.NETCore.Runtime/1.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.Runtime.CoreCLR": "1.0.1",
-          "Microsoft.NETCore.Runtime.Native": "1.0.1"
+          "Microsoft.NETCore.Runtime.Native": "1.0.0"
         }
       },
-      "Microsoft.NETCore.Runtime.CoreCLR/1.0.1": {},
-      "Microsoft.NETCore.Runtime.Native/1.0.1": {},
+      "Microsoft.NETCore.Runtime.Native/1.0.0": {
+        "dependencies": {
+          "System.Collections": "[4.0.10]",
+          "System.Diagnostics.Contracts": "[4.0.0]",
+          "System.Diagnostics.Debug": "[4.0.10]",
+          "System.Diagnostics.StackTrace": "[4.0.0]",
+          "System.Diagnostics.Tools": "[4.0.0]",
+          "System.Diagnostics.Tracing": "[4.0.20]",
+          "System.Globalization": "[4.0.10]",
+          "System.Globalization.Calendars": "[4.0.0]",
+          "System.IO": "[4.0.10]",
+          "System.ObjectModel": "[4.0.10]",
+          "System.Private.Uri": "[4.0.0]",
+          "System.Reflection": "[4.0.10]",
+          "System.Reflection.Extensions": "[4.0.0]",
+          "System.Reflection.Primitives": "[4.0.0]",
+          "System.Resources.ResourceManager": "[4.0.0]",
+          "System.Runtime": "[4.0.20]",
+          "System.Runtime.Extensions": "[4.0.10]",
+          "System.Runtime.Handles": "[4.0.0]",
+          "System.Runtime.InteropServices": "[4.0.20]",
+          "System.Text.Encoding": "[4.0.10]",
+          "System.Text.Encoding.Extensions": "[4.0.10]",
+          "System.Threading": "[4.0.10]",
+          "System.Threading.Tasks": "[4.0.10]",
+          "System.Threading.Timer": "[4.0.0]"
+        }
+      },
       "Microsoft.NETCore.Targets/1.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.0",
@@ -7677,11 +6841,11 @@
         }
       },
       "Microsoft.NETCore.Targets.UniversalWindowsPlatform/5.0.0": {},
-      "Microsoft.NETCore.UniversalWindowsPlatform/5.1.0": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/5.0.0": {
         "dependencies": {
           "Microsoft.NETCore": "5.0.0",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.0",
-          "Microsoft.NETCore.Runtime": "1.0.1",
+          "Microsoft.NETCore.Runtime": "1.0.0",
           "Microsoft.Win32.Primitives": "4.0.0",
           "System.ComponentModel.EventBasedAsync": "4.0.10",
           "System.Data.Common": "4.0.0",
@@ -7695,9 +6859,9 @@
           "System.Numerics.Vectors.WindowsRuntime": "4.0.0",
           "System.Reflection.Context": "4.0.0",
           "System.Runtime.InteropServices.WindowsRuntime": "4.0.0",
-          "System.Runtime.Serialization.Json": "4.0.1",
-          "System.Runtime.Serialization.Primitives": "4.1.0",
-          "System.Runtime.Serialization.Xml": "4.1.0",
+          "System.Runtime.Serialization.Json": "4.0.0",
+          "System.Runtime.Serialization.Primitives": "4.0.10",
+          "System.Runtime.Serialization.Xml": "4.0.10",
           "System.Runtime.WindowsRuntime": "4.0.10",
           "System.Runtime.WindowsRuntime.UI.Xaml": "4.0.0",
           "System.ServiceModel.Duplex": "4.0.0",
@@ -7745,45 +6909,6 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
-        }
-      },
-      "Newtonsoft.Json/7.0.1": {
-        "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
-        }
-      },
-      "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
-        "dependencies": {
-          "System.Collections": "4.0.10",
-          "System.Diagnostics.Debug": "4.0.10",
-          "System.Globalization": "4.0.10",
-          "System.IO": "4.0.10",
-          "System.Linq": "4.0.0",
-          "System.Reflection": "4.0.10",
-          "System.Reflection.Extensions": "4.0.0",
-          "System.Reflection.Primitives": "4.0.0",
-          "System.Reflection.TypeExtensions": "4.0.0",
-          "System.Resources.ResourceManager": "4.0.0",
-          "System.Runtime": "4.0.20",
-          "System.Runtime.Extensions": "4.0.10",
-          "System.Runtime.Serialization.Primitives": "4.1.0",
-          "System.Text.Encoding": "4.0.10",
-          "System.Text.Encoding.Extensions": "4.0.10",
-          "System.Text.RegularExpressions": "4.0.10",
-          "System.Threading": "4.0.10",
-          "System.Threading.Tasks": "4.0.10",
-          "System.Xml.ReaderWriter": "4.0.10",
-          "System.Xml.XmlDocument": "4.0.0",
-          "System.Xml.XmlSerializer": "4.0.10"
-        },
-        "compile": {
-          "ref/dotnet/_._": {}
-        },
-        "runtime": {
-          "runtimes/win8-aot/lib/netcore50/System.Private.DataContractSerialization.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -8423,12 +7548,32 @@
           "lib/dotnet/System.ObjectModel.dll": {}
         }
       },
-      "System.Private.DataContractSerialization/4.1.0": {
+      "System.Private.DataContractSerialization/4.0.0": {
         "dependencies": {
-          "runtime.aot.System.Private.DataContractSerialization": "4.1.0"
+          "System.Collections": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.IO": "4.0.10",
+          "System.Linq": "4.0.0",
+          "System.Reflection": "4.0.10",
+          "System.Reflection.Extensions": "4.0.0",
+          "System.Reflection.Primitives": "4.0.0",
+          "System.Reflection.TypeExtensions": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Runtime.Serialization.Primitives": "4.0.10",
+          "System.Text.Encoding": "4.0.10",
+          "System.Text.Encoding.Extensions": "4.0.10",
+          "System.Text.RegularExpressions": "4.0.10",
+          "System.Threading": "4.0.10",
+          "System.Xml.ReaderWriter": "4.0.10",
+          "System.Xml.XmlSerializer": "4.0.10"
         },
         "compile": {
           "ref/netcore50/_._": {}
+        },
+        "runtime": {
+          "runtimes/win8-aot/lib/netcore50/System.Private.DataContractSerialization.dll": {}
         }
       },
       "System.Private.Networking/4.0.0": {
@@ -8739,11 +7884,9 @@
           "lib/netcore50/System.Runtime.Numerics.dll": {}
         }
       },
-      "System.Runtime.Serialization.Json/4.0.1": {
+      "System.Runtime.Serialization.Json/4.0.0": {
         "dependencies": {
-          "System.IO": "4.0.0",
-          "System.Private.DataContractSerialization": "4.1.0",
-          "System.Runtime": "4.0.0"
+          "System.Private.DataContractSerialization": "4.0.0"
         },
         "compile": {
           "ref/netcore50/System.Runtime.Serialization.Json.dll": {}
@@ -8752,29 +7895,25 @@
           "runtimes/win8-aot/lib/netcore50/System.Runtime.Serialization.Json.dll": {}
         }
       },
-      "System.Runtime.Serialization.Primitives/4.1.0": {
+      "System.Runtime.Serialization.Primitives/4.0.10": {
         "dependencies": {
           "System.Resources.ResourceManager": "4.0.0",
           "System.Runtime": "4.0.20"
         },
         "compile": {
-          "ref/netcore50/System.Runtime.Serialization.Primitives.dll": {}
+          "ref/dotnet/System.Runtime.Serialization.Primitives.dll": {}
         },
         "runtime": {
-          "runtimes/win8-aot/lib/netcore50/System.Runtime.Serialization.Primitives.dll": {}
+          "lib/dotnet/System.Runtime.Serialization.Primitives.dll": {}
         }
       },
-      "System.Runtime.Serialization.Xml/4.1.0": {
+      "System.Runtime.Serialization.Xml/4.0.10": {
         "dependencies": {
-          "System.IO": "4.0.0",
-          "System.Private.DataContractSerialization": "4.1.0",
-          "System.Runtime": "4.0.0",
-          "System.Runtime.Serialization.Primitives": "4.1.0",
-          "System.Text.Encoding": "4.0.0",
-          "System.Xml.ReaderWriter": "4.0.0"
+          "System.Private.DataContractSerialization": "4.0.0",
+          "System.Runtime.Serialization.Primitives": "4.0.10"
         },
         "compile": {
-          "ref/netcore50/System.Runtime.Serialization.Xml.dll": {}
+          "ref/dotnet/System.Runtime.Serialization.Xml.dll": {}
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Runtime.Serialization.Xml.dll": {}
@@ -9142,168 +8281,9 @@
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "TagLib.Portable/1.0.4": {
-        "compile": {
-          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
-        }
-      },
-      "Zlib.Portable.Signed/1.11.0": {
-        "compile": {
-          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
-        }
       }
     },
     "UAP,Version=v10.0/win10-x86": {
-      "Google.Apis/1.13.0": {
-        "dependencies": {
-          "Google.Apis.Core": "1.13.0",
-          "Zlib.Portable.Signed": "1.11.0"
-        },
-        "compile": {
-          "lib/win81/Google.Apis.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Google.Apis.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.dll": {}
-        }
-      },
-      "Google.Apis.Auth/1.13.0": {
-        "dependencies": {
-          "Google.Apis.Core": "1.13.0"
-        },
-        "compile": {
-          "lib/win81/Google.Apis.Auth.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.Auth.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Google.Apis.Auth.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.Auth.dll": {}
-        }
-      },
-      "Google.Apis.Core/1.13.0": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.10",
-          "Microsoft.Bcl.Async": "1.0.168",
-          "Microsoft.Bcl.Build": "1.0.21",
-          "Microsoft.Net.Http": "2.2.29",
-          "Newtonsoft.Json": "7.0.1"
-        },
-        "compile": {
-          "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
-        }
-      },
-      "Google.Apis.Drive.v2/1.13.0.498": {
-        "dependencies": {
-          "Google.Apis": "1.13.0",
-          "Google.Apis.Auth": "1.13.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
-        }
-      },
-      "Google.Apis.Oauth2.v2/1.13.0.454": {
-        "dependencies": {
-          "Google.Apis": "1.13.0",
-          "Google.Apis.Auth": "1.13.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Oauth2.v2.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Oauth2.v2.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights/2.0.1": {
-        "dependencies": {
-          "System.Collections": "4.0.10",
-          "System.Diagnostics.Debug": "4.0.10",
-          "System.Diagnostics.Tools": "4.0.0",
-          "System.Diagnostics.Tracing": "4.0.20",
-          "System.Globalization": "4.0.10",
-          "System.IO": "4.0.10",
-          "System.IO.Compression": "4.0.0",
-          "System.Linq": "4.0.0",
-          "System.Net.Http": "4.0.0",
-          "System.Reflection": "4.0.10",
-          "System.Reflection.Extensions": "4.0.0",
-          "System.Runtime": "4.0.20",
-          "System.Runtime.Extensions": "4.0.10",
-          "System.Text.Encoding": "4.0.10",
-          "System.Text.Encoding.Extensions": "4.0.10",
-          "System.Text.RegularExpressions": "4.0.10",
-          "System.Threading": "4.0.10",
-          "System.Threading.Tasks": "4.0.10",
-          "System.Xml.XDocument": "4.0.10"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.ApplicationInsights.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.ApplicationInsights.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.PersistenceChannel/1.2.3": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "1.2.3"
-        },
-        "compile": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.WindowsApps/1.1.1": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.2.3]",
-          "Microsoft.ApplicationInsights.PersistenceChannel": "[1.2.3]"
-        },
-        "compile": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        }
-      },
-      "Microsoft.Bcl/1.1.10": {
-        "dependencies": {
-          "Microsoft.Bcl.Build": "1.0.14"
-        },
-        "compile": {
-          "lib/win8/_._": {}
-        },
-        "runtime": {
-          "lib/win8/_._": {}
-        }
-      },
-      "Microsoft.Bcl.Async/1.0.168": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.8"
-        },
-        "compile": {
-          "lib/win8/Microsoft.Threading.Tasks.Extensions.dll": {},
-          "lib/win8/Microsoft.Threading.Tasks.dll": {}
-        },
-        "runtime": {
-          "lib/win8/Microsoft.Threading.Tasks.Extensions.dll": {},
-          "lib/win8/Microsoft.Threading.Tasks.dll": {}
-        }
-      },
-      "Microsoft.Bcl.Build/1.0.21": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -9328,20 +8308,6 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
-        }
-      },
-      "Microsoft.Net.Http/2.2.29": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.10",
-          "Microsoft.Bcl.Build": "1.0.14"
-        },
-        "compile": {
-          "lib/win8/System.Net.Http.Extensions.dll": {},
-          "lib/win8/System.Net.Http.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/win8/System.Net.Http.Extensions.dll": {},
-          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.0": {
@@ -9438,18 +8404,55 @@
           "lib/netcore50/System.dll": {}
         }
       },
-      "Microsoft.NETCore.Runtime/1.0.1": {
+      "Microsoft.NETCore.Runtime/1.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.Runtime.CoreCLR": "1.0.1",
-          "Microsoft.NETCore.Runtime.Native": "1.0.1"
+          "Microsoft.NETCore.Runtime.CoreCLR-x86": "1.0.0",
+          "Microsoft.NETCore.Windows.ApiSets-x86": "1.0.0"
         }
       },
-      "Microsoft.NETCore.Runtime.CoreCLR/1.0.1": {
+      "Microsoft.NETCore.Runtime.CoreCLR-x86/1.0.0": {
         "dependencies": {
-          "runtime.win7-x86.Microsoft.NETCore.Runtime.CoreCLR": "1.0.1"
+          "System.Collections": "[4.0.10]",
+          "System.Diagnostics.Contracts": "[4.0.0]",
+          "System.Diagnostics.Debug": "[4.0.10]",
+          "System.Diagnostics.StackTrace": "[4.0.0]",
+          "System.Diagnostics.Tools": "[4.0.0]",
+          "System.Diagnostics.Tracing": "[4.0.20]",
+          "System.Globalization": "[4.0.10]",
+          "System.Globalization.Calendars": "[4.0.0]",
+          "System.IO": "[4.0.10]",
+          "System.ObjectModel": "[4.0.10]",
+          "System.Private.Uri": "[4.0.0]",
+          "System.Reflection": "[4.0.10]",
+          "System.Reflection.Extensions": "[4.0.0]",
+          "System.Reflection.Primitives": "[4.0.0]",
+          "System.Resources.ResourceManager": "[4.0.0]",
+          "System.Runtime": "[4.0.20]",
+          "System.Runtime.Extensions": "[4.0.10]",
+          "System.Runtime.Handles": "[4.0.0]",
+          "System.Runtime.InteropServices": "[4.0.20]",
+          "System.Text.Encoding": "[4.0.10]",
+          "System.Text.Encoding.Extensions": "[4.0.10]",
+          "System.Threading": "[4.0.10]",
+          "System.Threading.Tasks": "[4.0.10]",
+          "System.Threading.Timer": "[4.0.0]"
+        },
+        "compile": {
+          "ref/dotnet/_._": {}
+        },
+        "runtime": {
+          "runtimes/win7-x86/lib/dotnet/mscorlib.ni.dll": {}
+        },
+        "native": {
+          "runtimes/win7-x86/native/clretwrc.dll": {},
+          "runtimes/win7-x86/native/coreclr.dll": {},
+          "runtimes/win7-x86/native/dbgshim.dll": {},
+          "runtimes/win7-x86/native/mscordaccore.dll": {},
+          "runtimes/win7-x86/native/mscordbi.dll": {},
+          "runtimes/win7-x86/native/mscorrc.debug.dll": {},
+          "runtimes/win7-x86/native/mscorrc.dll": {}
         }
       },
-      "Microsoft.NETCore.Runtime.Native/1.0.1": {},
       "Microsoft.NETCore.Targets/1.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.0",
@@ -9457,11 +8460,11 @@
         }
       },
       "Microsoft.NETCore.Targets.UniversalWindowsPlatform/5.0.0": {},
-      "Microsoft.NETCore.UniversalWindowsPlatform/5.1.0": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/5.0.0": {
         "dependencies": {
           "Microsoft.NETCore": "5.0.0",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.0",
-          "Microsoft.NETCore.Runtime": "1.0.1",
+          "Microsoft.NETCore.Runtime": "1.0.0",
           "Microsoft.Win32.Primitives": "4.0.0",
           "System.ComponentModel.EventBasedAsync": "4.0.10",
           "System.Data.Common": "4.0.0",
@@ -9475,9 +8478,9 @@
           "System.Numerics.Vectors.WindowsRuntime": "4.0.0",
           "System.Reflection.Context": "4.0.0",
           "System.Runtime.InteropServices.WindowsRuntime": "4.0.0",
-          "System.Runtime.Serialization.Json": "4.0.1",
-          "System.Runtime.Serialization.Primitives": "4.1.0",
-          "System.Runtime.Serialization.Xml": "4.1.0",
+          "System.Runtime.Serialization.Json": "4.0.0",
+          "System.Runtime.Serialization.Primitives": "4.0.10",
+          "System.Runtime.Serialization.Xml": "4.0.10",
           "System.Runtime.WindowsRuntime": "4.0.10",
           "System.Runtime.WindowsRuntime.UI.Xaml": "4.0.0",
           "System.ServiceModel.Duplex": "4.0.0",
@@ -9530,67 +8533,6 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
-        }
-      },
-      "Newtonsoft.Json/7.0.1": {
-        "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
-        }
-      },
-      "runtime.any.System.Private.DataContractSerialization/4.1.0": {
-        "dependencies": {
-          "System.Collections": "4.0.10",
-          "System.Diagnostics.Debug": "4.0.10",
-          "System.Globalization": "4.0.10",
-          "System.IO": "4.0.10",
-          "System.Linq": "4.0.0",
-          "System.Reflection": "4.0.10",
-          "System.Reflection.Emit.ILGeneration": "4.0.0",
-          "System.Reflection.Emit.Lightweight": "4.0.0",
-          "System.Reflection.Extensions": "4.0.0",
-          "System.Reflection.Primitives": "4.0.0",
-          "System.Reflection.TypeExtensions": "4.0.0",
-          "System.Resources.ResourceManager": "4.0.0",
-          "System.Runtime": "4.0.20",
-          "System.Runtime.Extensions": "4.0.10",
-          "System.Runtime.Serialization.Primitives": "4.1.0",
-          "System.Text.Encoding": "4.0.10",
-          "System.Text.Encoding.Extensions": "4.0.10",
-          "System.Text.RegularExpressions": "4.0.10",
-          "System.Threading": "4.0.10",
-          "System.Threading.Tasks": "4.0.10",
-          "System.Xml.ReaderWriter": "4.0.10",
-          "System.Xml.XmlDocument": "4.0.0",
-          "System.Xml.XmlSerializer": "4.0.10"
-        },
-        "compile": {
-          "ref/dotnet/_._": {}
-        },
-        "runtime": {
-          "lib/netcore50/System.Private.DataContractSerialization.dll": {}
-        }
-      },
-      "runtime.win7-x86.Microsoft.NETCore.Runtime.CoreCLR/1.0.1": {
-        "dependencies": {
-          "Microsoft.NETCore.Windows.ApiSets-x86": "1.0.0"
-        },
-        "compile": {
-          "ref/dotnet/_._": {}
-        },
-        "runtime": {
-          "runtimes/win7-x86/lib/dotnet/mscorlib.ni.dll": {}
-        },
-        "native": {
-          "runtimes/win7-x86/native/clretwrc.dll": {},
-          "runtimes/win7-x86/native/coreclr.dll": {},
-          "runtimes/win7-x86/native/dbgshim.dll": {},
-          "runtimes/win7-x86/native/mscordaccore.dll": {},
-          "runtimes/win7-x86/native/mscordbi.dll": {},
-          "runtimes/win7-x86/native/mscorrc.debug.dll": {},
-          "runtimes/win7-x86/native/mscorrc.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -10234,12 +9176,34 @@
           "lib/dotnet/System.ObjectModel.dll": {}
         }
       },
-      "System.Private.DataContractSerialization/4.1.0": {
+      "System.Private.DataContractSerialization/4.0.0": {
         "dependencies": {
-          "runtime.any.System.Private.DataContractSerialization": "4.1.0"
+          "System.Collections": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.IO": "4.0.10",
+          "System.Linq": "4.0.0",
+          "System.Reflection": "4.0.10",
+          "System.Reflection.Emit.ILGeneration": "4.0.0",
+          "System.Reflection.Emit.Lightweight": "4.0.0",
+          "System.Reflection.Extensions": "4.0.0",
+          "System.Reflection.Primitives": "4.0.0",
+          "System.Reflection.TypeExtensions": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Runtime.Serialization.Primitives": "4.0.10",
+          "System.Text.Encoding": "4.0.10",
+          "System.Text.Encoding.Extensions": "4.0.10",
+          "System.Text.RegularExpressions": "4.0.10",
+          "System.Threading": "4.0.10",
+          "System.Xml.ReaderWriter": "4.0.10",
+          "System.Xml.XmlSerializer": "4.0.10"
         },
         "compile": {
           "ref/netcore50/_._": {}
+        },
+        "runtime": {
+          "lib/netcore50/System.Private.DataContractSerialization.dll": {}
         }
       },
       "System.Private.Networking/4.0.0": {
@@ -10566,11 +9530,9 @@
           "lib/netcore50/System.Runtime.Numerics.dll": {}
         }
       },
-      "System.Runtime.Serialization.Json/4.0.1": {
+      "System.Runtime.Serialization.Json/4.0.0": {
         "dependencies": {
-          "System.IO": "4.0.0",
-          "System.Private.DataContractSerialization": "4.1.0",
-          "System.Runtime": "4.0.0"
+          "System.Private.DataContractSerialization": "4.0.0"
         },
         "compile": {
           "ref/netcore50/System.Runtime.Serialization.Json.dll": {}
@@ -10579,29 +9541,25 @@
           "lib/netcore50/System.Runtime.Serialization.Json.dll": {}
         }
       },
-      "System.Runtime.Serialization.Primitives/4.1.0": {
+      "System.Runtime.Serialization.Primitives/4.0.10": {
         "dependencies": {
           "System.Resources.ResourceManager": "4.0.0",
           "System.Runtime": "4.0.20"
         },
         "compile": {
-          "ref/netcore50/System.Runtime.Serialization.Primitives.dll": {}
+          "ref/dotnet/System.Runtime.Serialization.Primitives.dll": {}
         },
         "runtime": {
-          "lib/netcore50/System.Runtime.Serialization.Primitives.dll": {}
+          "lib/dotnet/System.Runtime.Serialization.Primitives.dll": {}
         }
       },
-      "System.Runtime.Serialization.Xml/4.1.0": {
+      "System.Runtime.Serialization.Xml/4.0.10": {
         "dependencies": {
-          "System.IO": "4.0.0",
-          "System.Private.DataContractSerialization": "4.1.0",
-          "System.Runtime": "4.0.0",
-          "System.Runtime.Serialization.Primitives": "4.1.0",
-          "System.Text.Encoding": "4.0.0",
-          "System.Xml.ReaderWriter": "4.0.0"
+          "System.Private.DataContractSerialization": "4.0.0",
+          "System.Runtime.Serialization.Primitives": "4.0.10"
         },
         "compile": {
-          "ref/netcore50/System.Runtime.Serialization.Xml.dll": {}
+          "ref/dotnet/System.Runtime.Serialization.Xml.dll": {}
         },
         "runtime": {
           "lib/netcore50/System.Runtime.Serialization.Xml.dll": {}
@@ -10969,168 +9927,9 @@
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "TagLib.Portable/1.0.4": {
-        "compile": {
-          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
-        }
-      },
-      "Zlib.Portable.Signed/1.11.0": {
-        "compile": {
-          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
-        }
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
-      "Google.Apis/1.13.0": {
-        "dependencies": {
-          "Google.Apis.Core": "1.13.0",
-          "Zlib.Portable.Signed": "1.11.0"
-        },
-        "compile": {
-          "lib/win81/Google.Apis.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Google.Apis.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.dll": {}
-        }
-      },
-      "Google.Apis.Auth/1.13.0": {
-        "dependencies": {
-          "Google.Apis.Core": "1.13.0"
-        },
-        "compile": {
-          "lib/win81/Google.Apis.Auth.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.Auth.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Google.Apis.Auth.PlatformServices.dll": {},
-          "lib/win81/Google.Apis.Auth.dll": {}
-        }
-      },
-      "Google.Apis.Core/1.13.0": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.10",
-          "Microsoft.Bcl.Async": "1.0.168",
-          "Microsoft.Bcl.Build": "1.0.21",
-          "Microsoft.Net.Http": "2.2.29",
-          "Newtonsoft.Json": "7.0.1"
-        },
-        "compile": {
-          "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll": {}
-        }
-      },
-      "Google.Apis.Drive.v2/1.13.0.498": {
-        "dependencies": {
-          "Google.Apis": "1.13.0",
-          "Google.Apis.Auth": "1.13.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll": {}
-        }
-      },
-      "Google.Apis.Oauth2.v2/1.13.0.454": {
-        "dependencies": {
-          "Google.Apis": "1.13.0",
-          "Google.Apis.Auth": "1.13.0"
-        },
-        "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Oauth2.v2.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Oauth2.v2.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights/2.0.1": {
-        "dependencies": {
-          "System.Collections": "4.0.10",
-          "System.Diagnostics.Debug": "4.0.10",
-          "System.Diagnostics.Tools": "4.0.0",
-          "System.Diagnostics.Tracing": "4.0.20",
-          "System.Globalization": "4.0.10",
-          "System.IO": "4.0.10",
-          "System.IO.Compression": "4.0.0",
-          "System.Linq": "4.0.0",
-          "System.Net.Http": "4.0.0",
-          "System.Reflection": "4.0.10",
-          "System.Reflection.Extensions": "4.0.0",
-          "System.Runtime": "4.0.20",
-          "System.Runtime.Extensions": "4.0.10",
-          "System.Text.Encoding": "4.0.10",
-          "System.Text.Encoding.Extensions": "4.0.10",
-          "System.Text.RegularExpressions": "4.0.10",
-          "System.Threading": "4.0.10",
-          "System.Threading.Tasks": "4.0.10",
-          "System.Xml.XDocument": "4.0.10"
-        },
-        "compile": {
-          "lib/uap10.0/Microsoft.ApplicationInsights.dll": {}
-        },
-        "runtime": {
-          "lib/uap10.0/Microsoft.ApplicationInsights.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.PersistenceChannel/1.2.3": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "1.2.3"
-        },
-        "compile": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        },
-        "runtime": {
-          "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
-        }
-      },
-      "Microsoft.ApplicationInsights.WindowsApps/1.1.1": {
-        "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.2.3]",
-          "Microsoft.ApplicationInsights.PersistenceChannel": "[1.2.3]"
-        },
-        "compile": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        },
-        "runtime": {
-          "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll": {}
-        }
-      },
-      "Microsoft.Bcl/1.1.10": {
-        "dependencies": {
-          "Microsoft.Bcl.Build": "1.0.14"
-        },
-        "compile": {
-          "lib/win8/_._": {}
-        },
-        "runtime": {
-          "lib/win8/_._": {}
-        }
-      },
-      "Microsoft.Bcl.Async/1.0.168": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.8"
-        },
-        "compile": {
-          "lib/win8/Microsoft.Threading.Tasks.Extensions.dll": {},
-          "lib/win8/Microsoft.Threading.Tasks.dll": {}
-        },
-        "runtime": {
-          "lib/win8/Microsoft.Threading.Tasks.Extensions.dll": {},
-          "lib/win8/Microsoft.Threading.Tasks.dll": {}
-        }
-      },
-      "Microsoft.Bcl.Build/1.0.21": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.10",
@@ -11155,20 +9954,6 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
-        }
-      },
-      "Microsoft.Net.Http/2.2.29": {
-        "dependencies": {
-          "Microsoft.Bcl": "1.1.10",
-          "Microsoft.Bcl.Build": "1.0.14"
-        },
-        "compile": {
-          "lib/win8/System.Net.Http.Extensions.dll": {},
-          "lib/win8/System.Net.Http.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/win8/System.Net.Http.Extensions.dll": {},
-          "lib/win8/System.Net.Http.Primitives.dll": {}
         }
       },
       "Microsoft.NETCore/5.0.0": {
@@ -11266,14 +10051,39 @@
           "runtimes/aot/lib/netcore50/mscorlib.dll": {}
         }
       },
-      "Microsoft.NETCore.Runtime/1.0.1": {
+      "Microsoft.NETCore.Runtime/1.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.Runtime.CoreCLR": "1.0.1",
-          "Microsoft.NETCore.Runtime.Native": "1.0.1"
+          "Microsoft.NETCore.Runtime.Native": "1.0.0"
         }
       },
-      "Microsoft.NETCore.Runtime.CoreCLR/1.0.1": {},
-      "Microsoft.NETCore.Runtime.Native/1.0.1": {},
+      "Microsoft.NETCore.Runtime.Native/1.0.0": {
+        "dependencies": {
+          "System.Collections": "[4.0.10]",
+          "System.Diagnostics.Contracts": "[4.0.0]",
+          "System.Diagnostics.Debug": "[4.0.10]",
+          "System.Diagnostics.StackTrace": "[4.0.0]",
+          "System.Diagnostics.Tools": "[4.0.0]",
+          "System.Diagnostics.Tracing": "[4.0.20]",
+          "System.Globalization": "[4.0.10]",
+          "System.Globalization.Calendars": "[4.0.0]",
+          "System.IO": "[4.0.10]",
+          "System.ObjectModel": "[4.0.10]",
+          "System.Private.Uri": "[4.0.0]",
+          "System.Reflection": "[4.0.10]",
+          "System.Reflection.Extensions": "[4.0.0]",
+          "System.Reflection.Primitives": "[4.0.0]",
+          "System.Resources.ResourceManager": "[4.0.0]",
+          "System.Runtime": "[4.0.20]",
+          "System.Runtime.Extensions": "[4.0.10]",
+          "System.Runtime.Handles": "[4.0.0]",
+          "System.Runtime.InteropServices": "[4.0.20]",
+          "System.Text.Encoding": "[4.0.10]",
+          "System.Text.Encoding.Extensions": "[4.0.10]",
+          "System.Threading": "[4.0.10]",
+          "System.Threading.Tasks": "[4.0.10]",
+          "System.Threading.Timer": "[4.0.0]"
+        }
+      },
       "Microsoft.NETCore.Targets/1.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.0",
@@ -11281,11 +10091,11 @@
         }
       },
       "Microsoft.NETCore.Targets.UniversalWindowsPlatform/5.0.0": {},
-      "Microsoft.NETCore.UniversalWindowsPlatform/5.1.0": {
+      "Microsoft.NETCore.UniversalWindowsPlatform/5.0.0": {
         "dependencies": {
           "Microsoft.NETCore": "5.0.0",
           "Microsoft.NETCore.Portable.Compatibility": "1.0.0",
-          "Microsoft.NETCore.Runtime": "1.0.1",
+          "Microsoft.NETCore.Runtime": "1.0.0",
           "Microsoft.Win32.Primitives": "4.0.0",
           "System.ComponentModel.EventBasedAsync": "4.0.10",
           "System.Data.Common": "4.0.0",
@@ -11299,9 +10109,9 @@
           "System.Numerics.Vectors.WindowsRuntime": "4.0.0",
           "System.Reflection.Context": "4.0.0",
           "System.Runtime.InteropServices.WindowsRuntime": "4.0.0",
-          "System.Runtime.Serialization.Json": "4.0.1",
-          "System.Runtime.Serialization.Primitives": "4.1.0",
-          "System.Runtime.Serialization.Xml": "4.1.0",
+          "System.Runtime.Serialization.Json": "4.0.0",
+          "System.Runtime.Serialization.Primitives": "4.0.10",
+          "System.Runtime.Serialization.Xml": "4.0.10",
           "System.Runtime.WindowsRuntime": "4.0.10",
           "System.Runtime.WindowsRuntime.UI.Xaml": "4.0.0",
           "System.ServiceModel.Duplex": "4.0.0",
@@ -11349,45 +10159,6 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
-        }
-      },
-      "Newtonsoft.Json/7.0.1": {
-        "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
-        }
-      },
-      "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
-        "dependencies": {
-          "System.Collections": "4.0.10",
-          "System.Diagnostics.Debug": "4.0.10",
-          "System.Globalization": "4.0.10",
-          "System.IO": "4.0.10",
-          "System.Linq": "4.0.0",
-          "System.Reflection": "4.0.10",
-          "System.Reflection.Extensions": "4.0.0",
-          "System.Reflection.Primitives": "4.0.0",
-          "System.Reflection.TypeExtensions": "4.0.0",
-          "System.Resources.ResourceManager": "4.0.0",
-          "System.Runtime": "4.0.20",
-          "System.Runtime.Extensions": "4.0.10",
-          "System.Runtime.Serialization.Primitives": "4.1.0",
-          "System.Text.Encoding": "4.0.10",
-          "System.Text.Encoding.Extensions": "4.0.10",
-          "System.Text.RegularExpressions": "4.0.10",
-          "System.Threading": "4.0.10",
-          "System.Threading.Tasks": "4.0.10",
-          "System.Xml.ReaderWriter": "4.0.10",
-          "System.Xml.XmlDocument": "4.0.0",
-          "System.Xml.XmlSerializer": "4.0.10"
-        },
-        "compile": {
-          "ref/dotnet/_._": {}
-        },
-        "runtime": {
-          "runtimes/win8-aot/lib/netcore50/System.Private.DataContractSerialization.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -12027,12 +10798,32 @@
           "lib/dotnet/System.ObjectModel.dll": {}
         }
       },
-      "System.Private.DataContractSerialization/4.1.0": {
+      "System.Private.DataContractSerialization/4.0.0": {
         "dependencies": {
-          "runtime.aot.System.Private.DataContractSerialization": "4.1.0"
+          "System.Collections": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.IO": "4.0.10",
+          "System.Linq": "4.0.0",
+          "System.Reflection": "4.0.10",
+          "System.Reflection.Extensions": "4.0.0",
+          "System.Reflection.Primitives": "4.0.0",
+          "System.Reflection.TypeExtensions": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Runtime.Serialization.Primitives": "4.0.10",
+          "System.Text.Encoding": "4.0.10",
+          "System.Text.Encoding.Extensions": "4.0.10",
+          "System.Text.RegularExpressions": "4.0.10",
+          "System.Threading": "4.0.10",
+          "System.Xml.ReaderWriter": "4.0.10",
+          "System.Xml.XmlSerializer": "4.0.10"
         },
         "compile": {
           "ref/netcore50/_._": {}
+        },
+        "runtime": {
+          "runtimes/win8-aot/lib/netcore50/System.Private.DataContractSerialization.dll": {}
         }
       },
       "System.Private.Networking/4.0.0": {
@@ -12343,11 +11134,9 @@
           "lib/netcore50/System.Runtime.Numerics.dll": {}
         }
       },
-      "System.Runtime.Serialization.Json/4.0.1": {
+      "System.Runtime.Serialization.Json/4.0.0": {
         "dependencies": {
-          "System.IO": "4.0.0",
-          "System.Private.DataContractSerialization": "4.1.0",
-          "System.Runtime": "4.0.0"
+          "System.Private.DataContractSerialization": "4.0.0"
         },
         "compile": {
           "ref/netcore50/System.Runtime.Serialization.Json.dll": {}
@@ -12356,29 +11145,25 @@
           "runtimes/win8-aot/lib/netcore50/System.Runtime.Serialization.Json.dll": {}
         }
       },
-      "System.Runtime.Serialization.Primitives/4.1.0": {
+      "System.Runtime.Serialization.Primitives/4.0.10": {
         "dependencies": {
           "System.Resources.ResourceManager": "4.0.0",
           "System.Runtime": "4.0.20"
         },
         "compile": {
-          "ref/netcore50/System.Runtime.Serialization.Primitives.dll": {}
+          "ref/dotnet/System.Runtime.Serialization.Primitives.dll": {}
         },
         "runtime": {
-          "runtimes/win8-aot/lib/netcore50/System.Runtime.Serialization.Primitives.dll": {}
+          "lib/dotnet/System.Runtime.Serialization.Primitives.dll": {}
         }
       },
-      "System.Runtime.Serialization.Xml/4.1.0": {
+      "System.Runtime.Serialization.Xml/4.0.10": {
         "dependencies": {
-          "System.IO": "4.0.0",
-          "System.Private.DataContractSerialization": "4.1.0",
-          "System.Runtime": "4.0.0",
-          "System.Runtime.Serialization.Primitives": "4.1.0",
-          "System.Text.Encoding": "4.0.0",
-          "System.Xml.ReaderWriter": "4.0.0"
+          "System.Private.DataContractSerialization": "4.0.0",
+          "System.Runtime.Serialization.Primitives": "4.0.10"
         },
         "compile": {
-          "ref/netcore50/System.Runtime.Serialization.Xml.dll": {}
+          "ref/dotnet/System.Runtime.Serialization.Xml.dll": {}
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Runtime.Serialization.Xml.dll": {}
@@ -12746,343 +11531,10 @@
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
-      },
-      "TagLib.Portable/1.0.4": {
-        "compile": {
-          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll": {}
-        }
-      },
-      "Zlib.Portable.Signed/1.11.0": {
-        "compile": {
-          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll": {}
-        }
       }
     }
   },
   "libraries": {
-    "Google.Apis/1.13.0": {
-      "sha512": "OgidHRz9S0letpAMu4RhRppOLirjzHuXtmFDyFhz8QfTmdel6UOqRDqMVly8wVEJEF0L0lz3hpEDd7f8CY0aFw==",
-      "type": "package",
-      "files": [
-        "Google.Apis.1.13.0.nupkg.sha512",
-        "Google.Apis.nuspec",
-        "License.txt",
-        "lib/net45/Google.Apis.PlatformServices.dll",
-        "lib/net45/Google.Apis.PlatformServices.pdb",
-        "lib/net45/Google.Apis.PlatformServices.xml",
-        "lib/net45/Google.Apis.dll",
-        "lib/net45/Google.Apis.pdb",
-        "lib/net45/Google.Apis.xml",
-        "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.dll",
-        "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.pdb",
-        "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.xml",
-        "lib/win81/Google.Apis.PlatformServices.dll",
-        "lib/win81/Google.Apis.PlatformServices.pdb",
-        "lib/win81/Google.Apis.PlatformServices.xml",
-        "lib/win81/Google.Apis.dll",
-        "lib/win81/Google.Apis.pdb",
-        "lib/win81/Google.Apis.xml",
-        "lib/wp8/Google.Apis.PlatformServices.dll",
-        "lib/wp8/Google.Apis.PlatformServices.pdb",
-        "lib/wp8/Google.Apis.PlatformServices.xml",
-        "lib/wp8/Google.Apis.dll",
-        "lib/wp8/Google.Apis.pdb",
-        "lib/wp8/Google.Apis.xml",
-        "lib/wpa81/Google.Apis.PlatformServices.dll",
-        "lib/wpa81/Google.Apis.PlatformServices.pdb",
-        "lib/wpa81/Google.Apis.PlatformServices.xml",
-        "lib/wpa81/Google.Apis.dll",
-        "lib/wpa81/Google.Apis.pdb",
-        "lib/wpa81/Google.Apis.xml"
-      ]
-    },
-    "Google.Apis.Auth/1.13.0": {
-      "sha512": "xxjFZ2gaDNy0CWGAtI8TLAJ4QMrgZCGVdcRCNinYrGUtZ+zqaR9kny/Op9fpc/nxJNlFtRbwrNQFSQDDyD9QJA==",
-      "type": "package",
-      "files": [
-        "Google.Apis.Auth.1.13.0.nupkg.sha512",
-        "Google.Apis.Auth.nuspec",
-        "License.txt",
-        "lib/net45/Google.Apis.Auth.PlatformServices.dll",
-        "lib/net45/Google.Apis.Auth.PlatformServices.pdb",
-        "lib/net45/Google.Apis.Auth.PlatformServices.xml",
-        "lib/net45/Google.Apis.Auth.dll",
-        "lib/net45/Google.Apis.Auth.pdb",
-        "lib/net45/Google.Apis.Auth.xml",
-        "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Auth.dll",
-        "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Auth.pdb",
-        "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Auth.xml",
-        "lib/win81/Google.Apis.Auth.PlatformServices.dll",
-        "lib/win81/Google.Apis.Auth.PlatformServices.pdb",
-        "lib/win81/Google.Apis.Auth.PlatformServices.xml",
-        "lib/win81/Google.Apis.Auth.dll",
-        "lib/win81/Google.Apis.Auth.pdb",
-        "lib/win81/Google.Apis.Auth.xml",
-        "lib/wp8/Google.Apis.Auth.PlatformServices.dll",
-        "lib/wp8/Google.Apis.Auth.PlatformServices.pdb",
-        "lib/wp8/Google.Apis.Auth.PlatformServices.xml",
-        "lib/wp8/Google.Apis.Auth.dll",
-        "lib/wp8/Google.Apis.Auth.pdb",
-        "lib/wp8/Google.Apis.Auth.xml",
-        "lib/wpa81/Google.Apis.Auth.PlatformServices.dll",
-        "lib/wpa81/Google.Apis.Auth.PlatformServices.pdb",
-        "lib/wpa81/Google.Apis.Auth.PlatformServices.xml",
-        "lib/wpa81/Google.Apis.Auth.dll",
-        "lib/wpa81/Google.Apis.Auth.pdb",
-        "lib/wpa81/Google.Apis.Auth.xml"
-      ]
-    },
-    "Google.Apis.Core/1.13.0": {
-      "sha512": "PdlyJHCR+HD2cCq6M0nJiLaybNC72DzWTE+zhZcCjXhT38eHPg/7mhDI5yXx547ufucF6WL/Yt6g+98r1BMRSA==",
-      "type": "package",
-      "files": [
-        "Google.Apis.Core.1.13.0.nupkg.sha512",
-        "Google.Apis.Core.nuspec",
-        "License.txt",
-        "lib/net45/Google.Apis.Core.dll",
-        "lib/net45/Google.Apis.Core.pdb",
-        "lib/net45/Google.Apis.Core.xml",
-        "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.dll",
-        "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.pdb",
-        "lib/portable-net45+sl50+netcore45+wpa81+wp8/Google.Apis.Core.xml"
-      ]
-    },
-    "Google.Apis.Drive.v2/1.13.0.498": {
-      "sha512": "Ins+1EkRcqvvGz/nyRFQPGiRqgNIl9vtthwkyIh9vI/efr4Fa2xqou9lVg2Vy7MsyHvaPGYlH1OZUJfAUUo2Cw==",
-      "type": "package",
-      "files": [
-        "Google.Apis.Drive.v2.1.13.0.498.nupkg.sha512",
-        "Google.Apis.Drive.v2.nuspec",
-        "lib/portable-net40+sl50+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll",
-        "lib/portable-net40+sl50+netcore45+wpa81+wp8/Google.Apis.Drive.v2.pdb",
-        "lib/portable-net40+sl50+netcore45+wpa81+wp8/Google.Apis.Drive.v2.xml",
-        "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.dll",
-        "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.pdb",
-        "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Drive.v2.xml"
-      ]
-    },
-    "Google.Apis.Oauth2.v2/1.13.0.454": {
-      "sha512": "7uhxTZ8yAsOCC9uDFXGoo04fzADN784sHE6Vg1DdMSdVDdtS0Wi+TRiQ3J+3NKGWmS6VKpE/DhdoPDdDoJmbFg==",
-      "type": "package",
-      "files": [
-        "Google.Apis.Oauth2.v2.1.13.0.454.nupkg.sha512",
-        "Google.Apis.Oauth2.v2.nuspec",
-        "lib/portable-net40+sl50+netcore45+wpa81+wp8/Google.Apis.Oauth2.v2.dll",
-        "lib/portable-net40+sl50+netcore45+wpa81+wp8/Google.Apis.Oauth2.v2.pdb",
-        "lib/portable-net40+sl50+netcore45+wpa81+wp8/Google.Apis.Oauth2.v2.xml",
-        "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Oauth2.v2.dll",
-        "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Oauth2.v2.pdb",
-        "lib/portable-net45+netcore45+wpa81+wp8/Google.Apis.Oauth2.v2.xml"
-      ]
-    },
-    "Microsoft.ApplicationInsights/2.0.1": {
-      "sha512": "iZjOx8ysupwITjhCl6suEOBQ+yTUBlJhQ2lfXBJkpS66gjB5TDJxIPrqKJ17/v4QqiFw//eHTGtMUCtoMN6WDQ==",
-      "type": "package",
-      "files": [
-        "Microsoft.ApplicationInsights.2.0.1.nupkg.sha512",
-        "Microsoft.ApplicationInsights.nuspec",
-        "lib/dotnet5.4/Microsoft.ApplicationInsights.XML",
-        "lib/dotnet5.4/Microsoft.ApplicationInsights.dll",
-        "lib/net40/Microsoft.ApplicationInsights.XML",
-        "lib/net40/Microsoft.ApplicationInsights.dll",
-        "lib/net45/Microsoft.ApplicationInsights.XML",
-        "lib/net45/Microsoft.ApplicationInsights.dll",
-        "lib/net46/Microsoft.ApplicationInsights.XML",
-        "lib/net46/Microsoft.ApplicationInsights.dll",
-        "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll",
-        "lib/uap10.0/Microsoft.ApplicationInsights.dll",
-        "lib/wp8/Microsoft.ApplicationInsights.dll"
-      ]
-    },
-    "Microsoft.ApplicationInsights.PersistenceChannel/1.2.3": {
-      "sha512": "5MGcvPQVaGlGyAVh9adg4sSkIVSYDKn+H3+YnZa9hi1gH/g6UsRt4HLc8vp/IxjlbmXbJyAB7dYJV/NHmAGAgA==",
-      "type": "package",
-      "files": [
-        "Microsoft.ApplicationInsights.PersistenceChannel.1.2.3.nupkg.sha512",
-        "Microsoft.ApplicationInsights.PersistenceChannel.nuspec",
-        "lib/net40/Microsoft.ApplicationInsights.PersistenceChannel.XML",
-        "lib/net40/Microsoft.ApplicationInsights.PersistenceChannel.dll",
-        "lib/net45/Microsoft.ApplicationInsights.PersistenceChannel.XML",
-        "lib/net45/Microsoft.ApplicationInsights.PersistenceChannel.dll",
-        "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.XML",
-        "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll",
-        "lib/wp8/Microsoft.ApplicationInsights.PersistenceChannel.XML",
-        "lib/wp8/Microsoft.ApplicationInsights.PersistenceChannel.dll"
-      ]
-    },
-    "Microsoft.ApplicationInsights.WindowsApps/1.1.1": {
-      "sha512": "Orj0UQrjQ2z0aWZZoexl734Ge7Q4oVev3VFSsk6t8l2kImrfJ1eygkJWtQ1d7u0kF6MLLrvUvsMSxo+0rgPiMQ==",
-      "type": "package",
-      "files": [
-        "Microsoft.ApplicationInsights.WindowsApps.1.1.1.nupkg.sha512",
-        "Microsoft.ApplicationInsights.WindowsApps.nuspec",
-        "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.XML",
-        "lib/win81/Microsoft.ApplicationInsights.Extensibility.Windows.dll",
-        "lib/wp8/Microsoft.ApplicationInsights.Extensibility.Windows.XML",
-        "lib/wp8/Microsoft.ApplicationInsights.Extensibility.Windows.dll",
-        "lib/wpa81/Microsoft.ApplicationInsights.Extensibility.Windows.XML",
-        "lib/wpa81/Microsoft.ApplicationInsights.Extensibility.Windows.dll"
-      ]
-    },
-    "Microsoft.Bcl/1.1.10": {
-      "sha512": "+tTqoh/M1pyL8El3qLy30EcwnAtyvFoDZJtdG9Cbg/WdFbh4N8kyrq198XHuEL7lnJbeD0DRO8jcX5IIOh05cQ==",
-      "type": "package",
-      "files": [
-        "License-Stable.rtf",
-        "Microsoft.Bcl.1.1.10.nupkg.sha512",
-        "Microsoft.Bcl.nuspec",
-        "lib/Xamarin.iOS10/_._",
-        "lib/monoandroid/_._",
-        "lib/monotouch/_._",
-        "lib/net40/System.IO.dll",
-        "lib/net40/System.IO.xml",
-        "lib/net40/System.Runtime.dll",
-        "lib/net40/System.Runtime.xml",
-        "lib/net40/System.Threading.Tasks.dll",
-        "lib/net40/System.Threading.Tasks.xml",
-        "lib/net40/ensureRedirect.xml",
-        "lib/net45/_._",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.xml",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.xml",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.xml",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml",
-        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.dll",
-        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.xml",
-        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.dll",
-        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.xml",
-        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.dll",
-        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.xml",
-        "lib/portable-net40+sl4+win8+wp8+wpa81/ensureRedirect.xml",
-        "lib/portable-net40+sl4+win8/System.IO.dll",
-        "lib/portable-net40+sl4+win8/System.IO.xml",
-        "lib/portable-net40+sl4+win8/System.Runtime.dll",
-        "lib/portable-net40+sl4+win8/System.Runtime.xml",
-        "lib/portable-net40+sl4+win8/System.Threading.Tasks.dll",
-        "lib/portable-net40+sl4+win8/System.Threading.Tasks.xml",
-        "lib/portable-net40+sl4+win8/ensureRedirect.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/ensureRedirect.xml",
-        "lib/portable-net40+win8+wp8+wpa81/System.IO.dll",
-        "lib/portable-net40+win8+wp8+wpa81/System.IO.xml",
-        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.dll",
-        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.xml",
-        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.dll",
-        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.xml",
-        "lib/portable-net40+win8+wp8+wpa81/ensureRedirect.xml",
-        "lib/portable-net40+win8/System.IO.dll",
-        "lib/portable-net40+win8/System.IO.xml",
-        "lib/portable-net40+win8/System.Runtime.dll",
-        "lib/portable-net40+win8/System.Runtime.xml",
-        "lib/portable-net40+win8/System.Threading.Tasks.dll",
-        "lib/portable-net40+win8/System.Threading.Tasks.xml",
-        "lib/portable-net40+win8/ensureRedirect.xml",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/portable-net45+win8+wpa81/_._",
-        "lib/portable-net451+win81+wpa81/_._",
-        "lib/portable-net451+win81/_._",
-        "lib/portable-win81+wp81+wpa81/_._",
-        "lib/sl4-windowsphone71/System.IO.dll",
-        "lib/sl4-windowsphone71/System.IO.xml",
-        "lib/sl4-windowsphone71/System.Runtime.dll",
-        "lib/sl4-windowsphone71/System.Runtime.xml",
-        "lib/sl4-windowsphone71/System.Threading.Tasks.dll",
-        "lib/sl4-windowsphone71/System.Threading.Tasks.xml",
-        "lib/sl4-windowsphone71/ensureRedirect.xml",
-        "lib/sl4/System.IO.dll",
-        "lib/sl4/System.IO.xml",
-        "lib/sl4/System.Runtime.dll",
-        "lib/sl4/System.Runtime.xml",
-        "lib/sl4/System.Threading.Tasks.dll",
-        "lib/sl4/System.Threading.Tasks.xml",
-        "lib/sl5/System.IO.dll",
-        "lib/sl5/System.IO.xml",
-        "lib/sl5/System.Runtime.dll",
-        "lib/sl5/System.Runtime.xml",
-        "lib/sl5/System.Threading.Tasks.dll",
-        "lib/sl5/System.Threading.Tasks.xml",
-        "lib/win8/_._",
-        "lib/wp8/_._",
-        "lib/wpa81/_._"
-      ]
-    },
-    "Microsoft.Bcl.Async/1.0.168": {
-      "sha512": "tUNC02eBwDKpGre0BcNIvblLv1q0Q3DnS/vtkRHj2FE1sXwt386HAudztyl5C0U88hllrqHDvtlz8bK0Y8cHDA==",
-      "type": "package",
-      "files": [
-        "License-Stable.rtf",
-        "Microsoft.Bcl.Async.1.0.168.nupkg.sha512",
-        "Microsoft.Bcl.Async.nuspec",
-        "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.dll",
-        "lib/net40/Microsoft.Threading.Tasks.Extensions.Desktop.xml",
-        "lib/net40/Microsoft.Threading.Tasks.Extensions.dll",
-        "lib/net40/Microsoft.Threading.Tasks.Extensions.xml",
-        "lib/net40/Microsoft.Threading.Tasks.dll",
-        "lib/net40/Microsoft.Threading.Tasks.xml",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/Microsoft.Threading.Tasks.Extensions.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/Microsoft.Threading.Tasks.Extensions.xml",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/Microsoft.Threading.Tasks.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/Microsoft.Threading.Tasks.xml",
-        "lib/portable-net45+win8+wp8+wpa81/Microsoft.Threading.Tasks.Extensions.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Microsoft.Threading.Tasks.Extensions.xml",
-        "lib/portable-net45+win8+wp8+wpa81/Microsoft.Threading.Tasks.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Microsoft.Threading.Tasks.xml",
-        "lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.Extensions.dll",
-        "lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.Extensions.xml",
-        "lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.dll",
-        "lib/portable-net45+win8+wpa81/Microsoft.Threading.Tasks.xml",
-        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.Extensions.Phone.dll",
-        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.Extensions.Phone.xml",
-        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.Extensions.dll",
-        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.Extensions.xml",
-        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.dll",
-        "lib/sl4-windowsphone71/Microsoft.Threading.Tasks.xml",
-        "lib/sl4/Microsoft.Threading.Tasks.Extensions.Silverlight.dll",
-        "lib/sl4/Microsoft.Threading.Tasks.Extensions.Silverlight.xml",
-        "lib/sl4/Microsoft.Threading.Tasks.Extensions.dll",
-        "lib/sl4/Microsoft.Threading.Tasks.Extensions.xml",
-        "lib/sl4/Microsoft.Threading.Tasks.dll",
-        "lib/sl4/Microsoft.Threading.Tasks.xml",
-        "lib/win8/Microsoft.Threading.Tasks.Extensions.dll",
-        "lib/win8/Microsoft.Threading.Tasks.Extensions.xml",
-        "lib/win8/Microsoft.Threading.Tasks.dll",
-        "lib/win8/Microsoft.Threading.Tasks.xml",
-        "lib/wp8/Microsoft.Threading.Tasks.Extensions.Phone.dll",
-        "lib/wp8/Microsoft.Threading.Tasks.Extensions.Phone.xml",
-        "lib/wp8/Microsoft.Threading.Tasks.Extensions.dll",
-        "lib/wp8/Microsoft.Threading.Tasks.Extensions.xml",
-        "lib/wp8/Microsoft.Threading.Tasks.dll",
-        "lib/wp8/Microsoft.Threading.Tasks.xml",
-        "lib/wpa81/Microsoft.Threading.Tasks.Extensions.dll",
-        "lib/wpa81/Microsoft.Threading.Tasks.Extensions.xml",
-        "lib/wpa81/Microsoft.Threading.Tasks.dll",
-        "lib/wpa81/Microsoft.Threading.Tasks.xml"
-      ]
-    },
-    "Microsoft.Bcl.Build/1.0.21": {
-      "sha512": "sgHu4mIt0+NVGyI12Bj4hLPypNK55UOH+ologj2LqDCjxq3EbIxe/uAtHjY+fEwbE1dtsAHG8SXHf+V/EYbKTg==",
-      "type": "package",
-      "files": [
-        "License-Stable.rtf",
-        "Microsoft.Bcl.Build.1.0.21.nupkg.sha512",
-        "Microsoft.Bcl.Build.nuspec",
-        "build/Microsoft.Bcl.Build.Tasks.dll",
-        "build/Microsoft.Bcl.Build.targets"
-      ]
-    },
     "Microsoft.CSharp/4.0.0": {
       "sha512": "oWqeKUxHXdK6dL2CFjgMcaBISbkk+AqEg+yvJHE4DElNzS4QaTsCflgkkqZwVlWby1Dg9zo9n+iCAMFefFdJ/A==",
       "type": "package",
@@ -13120,72 +11572,6 @@
         "ref/wpa81/_._",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._"
-      ]
-    },
-    "Microsoft.Net.Http/2.2.29": {
-      "sha512": "fc4CPEewJ30Xgal+fSq1lYIBt582A7eKlAL7O4HXiYAiTp2VTnA4osSvk7T2n8aS4xTCPVJusQk3yKLT0XSpkg==",
-      "type": "package",
-      "files": [
-        "License-Stable.rtf",
-        "Microsoft.Net.Http.2.2.29.nupkg.sha512",
-        "Microsoft.Net.Http.nuspec",
-        "lib/Xamarin.iOS10/System.Net.Http.Extensions.XML",
-        "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll",
-        "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll",
-        "lib/Xamarin.iOS10/System.Net.Http.Primitives.xml",
-        "lib/monoandroid/System.Net.Http.Extensions.XML",
-        "lib/monoandroid/System.Net.Http.Extensions.dll",
-        "lib/monoandroid/System.Net.Http.Primitives.dll",
-        "lib/monoandroid/System.Net.Http.Primitives.xml",
-        "lib/monotouch/System.Net.Http.Extensions.XML",
-        "lib/monotouch/System.Net.Http.Extensions.dll",
-        "lib/monotouch/System.Net.Http.Primitives.dll",
-        "lib/monotouch/System.Net.Http.Primitives.xml",
-        "lib/net40/System.Net.Http.Extensions.XML",
-        "lib/net40/System.Net.Http.Extensions.dll",
-        "lib/net40/System.Net.Http.Primitives.dll",
-        "lib/net40/System.Net.Http.Primitives.xml",
-        "lib/net40/System.Net.Http.WebRequest.dll",
-        "lib/net40/System.Net.Http.WebRequest.xml",
-        "lib/net40/System.Net.Http.dll",
-        "lib/net40/System.Net.Http.xml",
-        "lib/net40/ensureRedirect.xml",
-        "lib/net45/System.Net.Http.Extensions.XML",
-        "lib/net45/System.Net.Http.Extensions.dll",
-        "lib/net45/System.Net.Http.Primitives.dll",
-        "lib/net45/System.Net.Http.Primitives.xml",
-        "lib/net45/ensureRedirect.xml",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Extensions.XML",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Extensions.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Primitives.XML",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Primitives.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.dll",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.xml",
-        "lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml",
-        "lib/portable-net45+win8+wpa81/System.Net.Http.Extensions.XML",
-        "lib/portable-net45+win8+wpa81/System.Net.Http.Extensions.dll",
-        "lib/portable-net45+win8+wpa81/System.Net.Http.Primitives.dll",
-        "lib/portable-net45+win8+wpa81/System.Net.Http.Primitives.xml",
-        "lib/portable-net45+win8+wpa81/ensureRedirect.xml",
-        "lib/portable-net45+win8/System.Net.Http.Extensions.XML",
-        "lib/portable-net45+win8/System.Net.Http.Extensions.dll",
-        "lib/portable-net45+win8/System.Net.Http.Primitives.dll",
-        "lib/portable-net45+win8/System.Net.Http.Primitives.xml",
-        "lib/portable-net45+win8/ensureRedirect.xml",
-        "lib/sl4-windowsphone71/System.Net.Http.Extensions.XML",
-        "lib/sl4-windowsphone71/System.Net.Http.Extensions.dll",
-        "lib/sl4-windowsphone71/System.Net.Http.Primitives.XML",
-        "lib/sl4-windowsphone71/System.Net.Http.Primitives.dll",
-        "lib/sl4-windowsphone71/System.Net.Http.dll",
-        "lib/sl4-windowsphone71/System.Net.Http.xml",
-        "lib/win8/System.Net.Http.Extensions.XML",
-        "lib/win8/System.Net.Http.Extensions.dll",
-        "lib/win8/System.Net.Http.Primitives.dll",
-        "lib/win8/System.Net.Http.Primitives.xml",
-        "lib/wpa81/System.Net.Http.Extensions.XML",
-        "lib/wpa81/System.Net.Http.Extensions.dll",
-        "lib/wpa81/System.Net.Http.Primitives.dll",
-        "lib/wpa81/System.Net.Http.Primitives.xml"
       ]
     },
     "Microsoft.NETCore/5.0.0": {
@@ -13285,35 +11671,73 @@
         "runtimes/aot/lib/netcore50/mscorlib.dll"
       ]
     },
-    "Microsoft.NETCore.Runtime/1.0.1": {
-      "sha512": "WIblAPds88Mwvcu8OjmspmHLG9zyay//n1jMVxQlxikGzZBIeRDz/O7o9qBtOR+vDpfn+Y2EbzdCmPb3brMGRg==",
+    "Microsoft.NETCore.Runtime/1.0.0": {
+      "sha512": "AjaMNpXLW4miEQorIqyn6iQ+BZBId6qXkhwyeh1vl6kXLqosZusbwmLNlvj/xllSQrd3aImJbvlHusam85g+xQ==",
       "type": "package",
       "files": [
-        "Microsoft.NETCore.Runtime.1.0.1.nupkg.sha512",
+        "Microsoft.NETCore.Runtime.1.0.0.nupkg.sha512",
         "Microsoft.NETCore.Runtime.nuspec",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt"
-      ]
-    },
-    "Microsoft.NETCore.Runtime.CoreCLR/1.0.1": {
-      "sha512": "EQlk4pidS+VppUSjhCCMXYlw9mf/47BwyM5XIX/gQHp5/qedKG7jypSMy0SGwv80U5mr1juQC0YROqjr7j8nTA==",
-      "type": "package",
-      "files": [
-        "Microsoft.NETCore.Runtime.CoreCLR.1.0.1.nupkg.sha512",
-        "Microsoft.NETCore.Runtime.CoreCLR.nuspec",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
         "runtime.json"
       ]
     },
-    "Microsoft.NETCore.Runtime.Native/1.0.1": {
-      "sha512": "VeZR/qn/+FRH5rd1htnwBFIzSBW6xiA7Yu2UzaHKKlyf9Ev9xVXIOitWnkvb/tJMTKdmiCzmfi2TsAMajUHNZA==",
+    "Microsoft.NETCore.Runtime.CoreCLR-arm/1.0.0": {
+      "sha512": "hoJfIl981eXwn9Tz8onO/J1xaYApIfp/YrhjSh9rRhml1U5Wj80LBgyp/6n+KI3VlvcAraThhnHnCTp+M3Uh+w==",
       "type": "package",
       "files": [
-        "Microsoft.NETCore.Runtime.Native.1.0.1.nupkg.sha512",
+        "Microsoft.NETCore.Runtime.CoreCLR-arm.1.0.0.nupkg.sha512",
+        "Microsoft.NETCore.Runtime.CoreCLR-arm.nuspec",
+        "ref/dotnet/_._",
+        "runtimes/win8-arm/lib/dotnet/mscorlib.ni.dll",
+        "runtimes/win8-arm/native/clretwrc.dll",
+        "runtimes/win8-arm/native/coreclr.dll",
+        "runtimes/win8-arm/native/dbgshim.dll",
+        "runtimes/win8-arm/native/mscordaccore.dll",
+        "runtimes/win8-arm/native/mscordbi.dll",
+        "runtimes/win8-arm/native/mscorrc.debug.dll",
+        "runtimes/win8-arm/native/mscorrc.dll"
+      ]
+    },
+    "Microsoft.NETCore.Runtime.CoreCLR-x64/1.0.0": {
+      "sha512": "DaY5Z13xCZpnVIGluC5sCo4/0wy1rl6mptBH7v3RYi3guAmG88aSeFoQzyZepo0H0jEixUxNFM0+MB6Jc+j0bw==",
+      "type": "package",
+      "files": [
+        "Microsoft.NETCore.Runtime.CoreCLR-x64.1.0.0.nupkg.sha512",
+        "Microsoft.NETCore.Runtime.CoreCLR-x64.nuspec",
+        "ref/dotnet/_._",
+        "runtimes/win7-x64/lib/dotnet/mscorlib.ni.dll",
+        "runtimes/win7-x64/native/clretwrc.dll",
+        "runtimes/win7-x64/native/coreclr.dll",
+        "runtimes/win7-x64/native/dbgshim.dll",
+        "runtimes/win7-x64/native/mscordaccore.dll",
+        "runtimes/win7-x64/native/mscordbi.dll",
+        "runtimes/win7-x64/native/mscorrc.debug.dll",
+        "runtimes/win7-x64/native/mscorrc.dll"
+      ]
+    },
+    "Microsoft.NETCore.Runtime.CoreCLR-x86/1.0.0": {
+      "sha512": "2LDffu5Is/X01GVPVuye4Wmz9/SyGDNq1Opgl5bXG3206cwNiCwsQgILOtfSWVp5mn4w401+8cjhBy3THW8HQQ==",
+      "type": "package",
+      "files": [
+        "Microsoft.NETCore.Runtime.CoreCLR-x86.1.0.0.nupkg.sha512",
+        "Microsoft.NETCore.Runtime.CoreCLR-x86.nuspec",
+        "ref/dotnet/_._",
+        "runtimes/win7-x86/lib/dotnet/mscorlib.ni.dll",
+        "runtimes/win7-x86/native/clretwrc.dll",
+        "runtimes/win7-x86/native/coreclr.dll",
+        "runtimes/win7-x86/native/dbgshim.dll",
+        "runtimes/win7-x86/native/mscordaccore.dll",
+        "runtimes/win7-x86/native/mscordbi.dll",
+        "runtimes/win7-x86/native/mscorrc.debug.dll",
+        "runtimes/win7-x86/native/mscorrc.dll"
+      ]
+    },
+    "Microsoft.NETCore.Runtime.Native/1.0.0": {
+      "sha512": "tMsWWrH1AJCguiM22zK/vr6COxqz62Q1F02B07IXAUN405R3HGk5SkD/DL0Hte+OTjNtW9LkKXpOggGBRwYFNg==",
+      "type": "package",
+      "files": [
+        "Microsoft.NETCore.Runtime.Native.1.0.0.nupkg.sha512",
         "Microsoft.NETCore.Runtime.Native.nuspec",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt"
+        "_._"
       ]
     },
     "Microsoft.NETCore.Targets/1.0.0": {
@@ -13334,14 +11758,13 @@
         "runtime.json"
       ]
     },
-    "Microsoft.NETCore.UniversalWindowsPlatform/5.1.0": {
-      "sha512": "6xdZAZALSJB65rRfOAfB6+aVBBc42Oz8jr8Cqy8J7A34zWVBV9l612lwbEsf6KJ1YdtocJsNcA8sLId3vJL/FA==",
+    "Microsoft.NETCore.UniversalWindowsPlatform/5.0.0": {
+      "sha512": "D0nsAm+yTk0oSSC7E6PcmuuEewBAQbGgIXNcCnRqQ4qLPdQLMjMHg8cilGs3xZgwTRQmMtEn45TAatrU1otWPQ==",
       "type": "package",
       "files": [
-        "Microsoft.NETCore.UniversalWindowsPlatform.5.1.0.nupkg.sha512",
+        "Microsoft.NETCore.UniversalWindowsPlatform.5.0.0.nupkg.sha512",
         "Microsoft.NETCore.UniversalWindowsPlatform.nuspec",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt"
+        "_._"
       ]
     },
     "Microsoft.NETCore.Windows.ApiSets-x64/1.0.0": {
@@ -13731,110 +12154,6 @@
         "ref/net46/Microsoft.Win32.Primitives.dll",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._"
-      ]
-    },
-    "Newtonsoft.Json/7.0.1": {
-      "sha512": "q3V4KLetMLnt1gpAVWgtXnHjKs0UG/RalBc29u2ZKxd5t5Ze4JBL5WiiYIklJyK/5CRiIiNwigVQUo0FgbsuWA==",
-      "type": "package",
-      "files": [
-        "Newtonsoft.Json.7.0.1.nupkg.sha512",
-        "Newtonsoft.Json.nuspec",
-        "lib/net20/Newtonsoft.Json.dll",
-        "lib/net20/Newtonsoft.Json.xml",
-        "lib/net35/Newtonsoft.Json.dll",
-        "lib/net35/Newtonsoft.Json.xml",
-        "lib/net40/Newtonsoft.Json.dll",
-        "lib/net40/Newtonsoft.Json.xml",
-        "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll",
-        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.xml",
-        "tools/install.ps1"
-      ]
-    },
-    "runtime.any.System.Private.DataContractSerialization/4.1.0": {
-      "sha512": "nJ5sB6Q7vbOEZ+tm/L7XISxO0Az6tkMup5rhpgPboVpUKgMnsdWiDvSlzzpK/bsiYxMIJCJ4Xrt2abt8Z1beJw==",
-      "type": "package",
-      "files": [
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/DNXCore50/System.Private.DataContractSerialization.dll",
-        "lib/netcore50/System.Private.DataContractSerialization.dll",
-        "ref/dotnet/_._",
-        "runtime.any.System.Private.DataContractSerialization.4.1.0.nupkg.sha512",
-        "runtime.any.System.Private.DataContractSerialization.nuspec",
-        "runtimes/aot/lib/netcore50/_._"
-      ]
-    },
-    "runtime.aot.System.Private.DataContractSerialization/4.1.0": {
-      "sha512": "0GKgzv1P8U+1x0grF5xg9xAjjVahzAZwGNF6ff8/CeXi+1isQYi7vZ/GhiyU7zDaQnKmSOj1/tTZqhOo5P4yTA==",
-      "type": "package",
-      "files": [
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "ref/dotnet/_._",
-        "runtime.aot.System.Private.DataContractSerialization.4.1.0.nupkg.sha512",
-        "runtime.aot.System.Private.DataContractSerialization.nuspec",
-        "runtimes/win8-aot/lib/netcore50/System.Private.DataContractSerialization.dll"
-      ]
-    },
-    "runtime.win7-x64.Microsoft.NETCore.Runtime.CoreCLR/1.0.1": {
-      "sha512": "RGzhZPvizLZVtpUAnRHdIlluBT+IBgj9YuJcpUzvE9X9sDfSIzKLmHoAYeuQDOKXjRiy1qWh6/qsgXF9K8LDrQ==",
-      "type": "package",
-      "files": [
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "ref/dotnet/_._",
-        "runtime.win7-x64.Microsoft.NETCore.Runtime.CoreCLR.1.0.1.nupkg.sha512",
-        "runtime.win7-x64.Microsoft.NETCore.Runtime.CoreCLR.nuspec",
-        "runtimes/win7-x64/lib/dotnet/mscorlib.ni.dll",
-        "runtimes/win7-x64/native/clretwrc.dll",
-        "runtimes/win7-x64/native/coreclr.dll",
-        "runtimes/win7-x64/native/dbgshim.dll",
-        "runtimes/win7-x64/native/mscordaccore.dll",
-        "runtimes/win7-x64/native/mscordbi.dll",
-        "runtimes/win7-x64/native/mscorrc.debug.dll",
-        "runtimes/win7-x64/native/mscorrc.dll"
-      ]
-    },
-    "runtime.win7-x86.Microsoft.NETCore.Runtime.CoreCLR/1.0.1": {
-      "sha512": "Sm4ZEOX0J7RLguqTTv/S1df8DHy+ndLPCg8qlth3icuO6awpSzkqte5gQMV4pSci5YduMed9mgRGcPe3EQ5l2w==",
-      "type": "package",
-      "files": [
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "ref/dotnet/_._",
-        "runtime.win7-x86.Microsoft.NETCore.Runtime.CoreCLR.1.0.1.nupkg.sha512",
-        "runtime.win7-x86.Microsoft.NETCore.Runtime.CoreCLR.nuspec",
-        "runtimes/win7-x86/lib/dotnet/mscorlib.ni.dll",
-        "runtimes/win7-x86/native/clretwrc.dll",
-        "runtimes/win7-x86/native/coreclr.dll",
-        "runtimes/win7-x86/native/dbgshim.dll",
-        "runtimes/win7-x86/native/mscordaccore.dll",
-        "runtimes/win7-x86/native/mscordbi.dll",
-        "runtimes/win7-x86/native/mscorrc.debug.dll",
-        "runtimes/win7-x86/native/mscorrc.dll"
-      ]
-    },
-    "runtime.win8-arm.Microsoft.NETCore.Runtime.CoreCLR/1.0.1": {
-      "sha512": "sO14C2owb6uCS+OuoCUO6baXQQrG4D3rfOtE6iL1RNsiTTe/rjQC7NZY0iWmUjzd7+g+5ejaEv4x3sM2KRAUSw==",
-      "type": "package",
-      "files": [
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "ref/dotnet/_._",
-        "runtime.win8-arm.Microsoft.NETCore.Runtime.CoreCLR.1.0.1.nupkg.sha512",
-        "runtime.win8-arm.Microsoft.NETCore.Runtime.CoreCLR.nuspec",
-        "runtimes/win8-arm/lib/dotnet/mscorlib.ni.dll",
-        "runtimes/win8-arm/native/clretwrc.dll",
-        "runtimes/win8-arm/native/coreclr.dll",
-        "runtimes/win8-arm/native/dbgshim.dll",
-        "runtimes/win8-arm/native/mscordaccore.dll",
-        "runtimes/win8-arm/native/mscordbi.dll",
-        "runtimes/win8-arm/native/mscorrc.debug.dll",
-        "runtimes/win8-arm/native/mscorrc.dll"
       ]
     },
     "System.AppContext/4.0.0": {
@@ -15054,17 +13373,18 @@
         "ref/xamarinmac20/_._"
       ]
     },
-    "System.Private.DataContractSerialization/4.1.0": {
-      "sha512": "jihi0lC7TMGx8QtMuz3tRFoXdP0BHbceAdd3gvRbNnxM3W93jSRE/cocQyGf64wlC/1etjHKPwnwdu+PDJkjnA==",
+    "System.Private.DataContractSerialization/4.0.0": {
+      "sha512": "uQvzoXHXHn/9YqUmPtgD8ZPJIlBuuL3QHegbuik97W/umoI28fOnGLnvjRHhju1VMWvFLRQoh7uZkBaoZ+KpVQ==",
       "type": "package",
       "files": [
-        "System.Private.DataContractSerialization.4.1.0.nupkg.sha512",
+        "System.Private.DataContractSerialization.4.0.0.nupkg.sha512",
         "System.Private.DataContractSerialization.nuspec",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
+        "lib/DNXCore50/System.Private.DataContractSerialization.dll",
+        "lib/netcore50/System.Private.DataContractSerialization.dll",
         "ref/dnxcore50/_._",
         "ref/netcore50/_._",
-        "runtime.json"
+        "runtime.json",
+        "runtimes/win8-aot/lib/netcore50/System.Private.DataContractSerialization.dll"
       ]
     },
     "System.Private.Networking/4.0.0": {
@@ -15599,180 +13919,95 @@
         "ref/wpa81/_._"
       ]
     },
-    "System.Runtime.Serialization.Json/4.0.1": {
-      "sha512": "MUqpQDHlwFAy3v+fVzLN26SMGCPW/J2n4vfsBfScPiut/+Kp77Pcy1nWX2FC83WskFMepvmjMcXwTYZ75FCK0Q==",
+    "System.Runtime.Serialization.Json/4.0.0": {
+      "sha512": "emhWMQP3sdtkAhD0TOeP3FfjS57sfQMQ2sqA6f2Yj5Gd9jkHV4KsQ2TsoJjghca6d8fur7+REQ6ILBXVdGf/0g==",
       "type": "package",
       "files": [
-        "System.Runtime.Serialization.Json.4.0.1.nupkg.sha512",
+        "System.Runtime.Serialization.Json.4.0.0.nupkg.sha512",
         "System.Runtime.Serialization.Json.nuspec",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
         "lib/DNXCore50/System.Runtime.Serialization.Json.dll",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
         "lib/net45/_._",
         "lib/netcore50/System.Runtime.Serialization.Json.dll",
         "lib/win8/_._",
         "lib/wp80/_._",
         "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/dotnet5.1/System.Runtime.Serialization.Json.dll",
-        "ref/dotnet5.1/System.Runtime.Serialization.Json.xml",
-        "ref/dotnet5.1/de/System.Runtime.Serialization.Json.xml",
-        "ref/dotnet5.1/es/System.Runtime.Serialization.Json.xml",
-        "ref/dotnet5.1/fr/System.Runtime.Serialization.Json.xml",
-        "ref/dotnet5.1/it/System.Runtime.Serialization.Json.xml",
-        "ref/dotnet5.1/ja/System.Runtime.Serialization.Json.xml",
-        "ref/dotnet5.1/ko/System.Runtime.Serialization.Json.xml",
-        "ref/dotnet5.1/ru/System.Runtime.Serialization.Json.xml",
-        "ref/dotnet5.1/zh-hans/System.Runtime.Serialization.Json.xml",
-        "ref/dotnet5.1/zh-hant/System.Runtime.Serialization.Json.xml",
+        "ref/dotnet/System.Runtime.Serialization.Json.dll",
+        "ref/dotnet/System.Runtime.Serialization.Json.xml",
+        "ref/dotnet/de/System.Runtime.Serialization.Json.xml",
+        "ref/dotnet/es/System.Runtime.Serialization.Json.xml",
+        "ref/dotnet/fr/System.Runtime.Serialization.Json.xml",
+        "ref/dotnet/it/System.Runtime.Serialization.Json.xml",
+        "ref/dotnet/ja/System.Runtime.Serialization.Json.xml",
+        "ref/dotnet/ko/System.Runtime.Serialization.Json.xml",
+        "ref/dotnet/ru/System.Runtime.Serialization.Json.xml",
+        "ref/dotnet/zh-hans/System.Runtime.Serialization.Json.xml",
+        "ref/dotnet/zh-hant/System.Runtime.Serialization.Json.xml",
         "ref/net45/_._",
         "ref/netcore50/System.Runtime.Serialization.Json.dll",
         "ref/netcore50/System.Runtime.Serialization.Json.xml",
-        "ref/netcore50/de/System.Runtime.Serialization.Json.xml",
-        "ref/netcore50/es/System.Runtime.Serialization.Json.xml",
-        "ref/netcore50/fr/System.Runtime.Serialization.Json.xml",
-        "ref/netcore50/it/System.Runtime.Serialization.Json.xml",
-        "ref/netcore50/ja/System.Runtime.Serialization.Json.xml",
-        "ref/netcore50/ko/System.Runtime.Serialization.Json.xml",
-        "ref/netcore50/ru/System.Runtime.Serialization.Json.xml",
-        "ref/netcore50/zh-hans/System.Runtime.Serialization.Json.xml",
-        "ref/netcore50/zh-hant/System.Runtime.Serialization.Json.xml",
         "ref/win8/_._",
         "ref/wp80/_._",
         "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
         "runtimes/win8-aot/lib/netcore50/System.Runtime.Serialization.Json.dll"
       ]
     },
-    "System.Runtime.Serialization.Primitives/4.1.0": {
-      "sha512": "2UBnpTwpEi5dzbNJ8KhbOZ7Te1XQNov9MrtJ+dcnqogjACPNzbOiGT2uU9XgZg+sdbPvr4VMvVjFwJ85uLLCuA==",
+    "System.Runtime.Serialization.Primitives/4.0.10": {
+      "sha512": "NPc8DZIomf5tGjYtz/KTHI01IPcVlypfhCux32AbLPDjTotdvL8TpKRwMyQJ6Kh08yprRVH7uBD1PdJiuoFzag==",
       "type": "package",
       "files": [
-        "System.Runtime.Serialization.Primitives.4.1.0.nupkg.sha512",
+        "System.Runtime.Serialization.Primitives.4.0.10.nupkg.sha512",
         "System.Runtime.Serialization.Primitives.nuspec",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
-        "lib/dotnet5.4/System.Runtime.Serialization.Primitives.dll",
-        "lib/net45/_._",
-        "lib/net46/System.Runtime.Serialization.Primitives.dll",
-        "lib/netcore50/System.Runtime.Serialization.Primitives.dll",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
+        "lib/dotnet/System.Runtime.Serialization.Primitives.dll",
+        "lib/net46/_._",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
-        "ref/dotnet5.1/System.Runtime.Serialization.Primitives.dll",
-        "ref/dotnet5.1/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet5.1/de/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet5.1/es/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet5.1/fr/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet5.1/it/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet5.1/ja/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet5.1/ko/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet5.1/ru/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet5.1/zh-hans/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet5.1/zh-hant/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet5.4/System.Runtime.Serialization.Primitives.dll",
-        "ref/dotnet5.4/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet5.4/de/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet5.4/es/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet5.4/fr/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet5.4/it/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet5.4/ja/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet5.4/ko/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet5.4/ru/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet5.4/zh-hans/System.Runtime.Serialization.Primitives.xml",
-        "ref/dotnet5.4/zh-hant/System.Runtime.Serialization.Primitives.xml",
-        "ref/net45/_._",
-        "ref/net46/System.Runtime.Serialization.Primitives.dll",
-        "ref/netcore50/System.Runtime.Serialization.Primitives.dll",
-        "ref/netcore50/System.Runtime.Serialization.Primitives.xml",
-        "ref/netcore50/de/System.Runtime.Serialization.Primitives.xml",
-        "ref/netcore50/es/System.Runtime.Serialization.Primitives.xml",
-        "ref/netcore50/fr/System.Runtime.Serialization.Primitives.xml",
-        "ref/netcore50/it/System.Runtime.Serialization.Primitives.xml",
-        "ref/netcore50/ja/System.Runtime.Serialization.Primitives.xml",
-        "ref/netcore50/ko/System.Runtime.Serialization.Primitives.xml",
-        "ref/netcore50/ru/System.Runtime.Serialization.Primitives.xml",
-        "ref/netcore50/zh-hans/System.Runtime.Serialization.Primitives.xml",
-        "ref/netcore50/zh-hant/System.Runtime.Serialization.Primitives.xml",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
+        "ref/dotnet/System.Runtime.Serialization.Primitives.dll",
+        "ref/dotnet/System.Runtime.Serialization.Primitives.xml",
+        "ref/dotnet/de/System.Runtime.Serialization.Primitives.xml",
+        "ref/dotnet/es/System.Runtime.Serialization.Primitives.xml",
+        "ref/dotnet/fr/System.Runtime.Serialization.Primitives.xml",
+        "ref/dotnet/it/System.Runtime.Serialization.Primitives.xml",
+        "ref/dotnet/ja/System.Runtime.Serialization.Primitives.xml",
+        "ref/dotnet/ko/System.Runtime.Serialization.Primitives.xml",
+        "ref/dotnet/ru/System.Runtime.Serialization.Primitives.xml",
+        "ref/dotnet/zh-hans/System.Runtime.Serialization.Primitives.xml",
+        "ref/dotnet/zh-hant/System.Runtime.Serialization.Primitives.xml",
+        "ref/net46/_._",
         "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "runtimes/win8-aot/lib/netcore50/System.Runtime.Serialization.Primitives.dll"
+        "ref/xamarinmac20/_._"
       ]
     },
-    "System.Runtime.Serialization.Xml/4.1.0": {
-      "sha512": "7TvzeIeNvT2GLpmSy/3J1VIkT70MroNujIiBWBe0qeM6/QFPdCcF/1Zxx9Ohc/iZUPAANb1wMruCAiYY2HTTrg==",
+    "System.Runtime.Serialization.Xml/4.0.10": {
+      "sha512": "xsy7XbH8RTpKoDPNcibSGCOpujsmwUmOWAby3PssqkZFpLBXUbDO2s6JKITRjxejET2g0PK8t+mdIvu3xmUuKA==",
       "type": "package",
       "files": [
-        "System.Runtime.Serialization.Xml.4.1.0.nupkg.sha512",
+        "System.Runtime.Serialization.Xml.4.0.10.nupkg.sha512",
         "System.Runtime.Serialization.Xml.nuspec",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
         "lib/DNXCore50/System.Runtime.Serialization.Xml.dll",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/net46/System.Runtime.Serialization.Xml.dll",
+        "lib/net46/_._",
         "lib/netcore50/System.Runtime.Serialization.Xml.dll",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
-        "ref/dotnet5.1/System.Runtime.Serialization.Xml.dll",
-        "ref/dotnet5.1/System.Runtime.Serialization.Xml.xml",
-        "ref/dotnet5.1/de/System.Runtime.Serialization.Xml.xml",
-        "ref/dotnet5.1/es/System.Runtime.Serialization.Xml.xml",
-        "ref/dotnet5.1/fr/System.Runtime.Serialization.Xml.xml",
-        "ref/dotnet5.1/it/System.Runtime.Serialization.Xml.xml",
-        "ref/dotnet5.1/ja/System.Runtime.Serialization.Xml.xml",
-        "ref/dotnet5.1/ko/System.Runtime.Serialization.Xml.xml",
-        "ref/dotnet5.1/ru/System.Runtime.Serialization.Xml.xml",
-        "ref/dotnet5.1/zh-hans/System.Runtime.Serialization.Xml.xml",
-        "ref/dotnet5.1/zh-hant/System.Runtime.Serialization.Xml.xml",
-        "ref/dotnet5.4/System.Runtime.Serialization.Xml.dll",
-        "ref/dotnet5.4/System.Runtime.Serialization.Xml.xml",
-        "ref/dotnet5.4/de/System.Runtime.Serialization.Xml.xml",
-        "ref/dotnet5.4/es/System.Runtime.Serialization.Xml.xml",
-        "ref/dotnet5.4/fr/System.Runtime.Serialization.Xml.xml",
-        "ref/dotnet5.4/it/System.Runtime.Serialization.Xml.xml",
-        "ref/dotnet5.4/ja/System.Runtime.Serialization.Xml.xml",
-        "ref/dotnet5.4/ko/System.Runtime.Serialization.Xml.xml",
-        "ref/dotnet5.4/ru/System.Runtime.Serialization.Xml.xml",
-        "ref/dotnet5.4/zh-hans/System.Runtime.Serialization.Xml.xml",
-        "ref/dotnet5.4/zh-hant/System.Runtime.Serialization.Xml.xml",
-        "ref/net45/_._",
-        "ref/net46/System.Runtime.Serialization.Xml.dll",
-        "ref/netcore50/System.Runtime.Serialization.Xml.dll",
-        "ref/netcore50/System.Runtime.Serialization.Xml.xml",
-        "ref/netcore50/de/System.Runtime.Serialization.Xml.xml",
-        "ref/netcore50/es/System.Runtime.Serialization.Xml.xml",
-        "ref/netcore50/fr/System.Runtime.Serialization.Xml.xml",
-        "ref/netcore50/it/System.Runtime.Serialization.Xml.xml",
-        "ref/netcore50/ja/System.Runtime.Serialization.Xml.xml",
-        "ref/netcore50/ko/System.Runtime.Serialization.Xml.xml",
-        "ref/netcore50/ru/System.Runtime.Serialization.Xml.xml",
-        "ref/netcore50/zh-hans/System.Runtime.Serialization.Xml.xml",
-        "ref/netcore50/zh-hant/System.Runtime.Serialization.Xml.xml",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
+        "ref/dotnet/System.Runtime.Serialization.Xml.dll",
+        "ref/dotnet/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet/de/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet/es/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet/fr/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet/it/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet/ja/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet/ko/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet/ru/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet/zh-hans/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet/zh-hant/System.Runtime.Serialization.Xml.xml",
+        "ref/net46/_._",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
         "runtimes/win8-aot/lib/netcore50/System.Runtime.Serialization.Xml.dll"
@@ -16435,36 +14670,11 @@
         "runtime.json",
         "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
-    },
-    "TagLib.Portable/1.0.4": {
-      "sha512": "c/Van3wkeEhN2TtQH8soZdD+vixe/ZsczC9ciRXgEY6txp1TlaIEzHtiRxQGZPVVXWFlxXcl0pn/vqr0nYVD3w==",
-      "type": "package",
-      "files": [
-        "TagLib.Portable.1.0.4.nupkg.sha512",
-        "TagLib.Portable.nuspec",
-        "lib/portable-net45+win+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/TagLib.Portable.dll"
-      ]
-    },
-    "Zlib.Portable.Signed/1.11.0": {
-      "sha512": "1f4itCxlSBxU8kf85qUmx1+d0iHKLeZK8S7ilb4w0t+uV+/xtOUUVOEAnFMG5uHVBc7L+ycZjWQoA+a1GZKYjg==",
-      "type": "package",
-      "files": [
-        "Zlib.Portable.Signed.1.11.0.nupkg.sha512",
-        "Zlib.Portable.Signed.nuspec",
-        "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.dll",
-        "lib/portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid/Zlib.Portable.xml"
-      ]
     }
   },
   "projectFileDependencyGroups": {
     "": [
-      "Google.Apis.Drive.v2 >= 1.13.0.498",
-      "Google.Apis.Oauth2.v2 >= 1.13.0.454",
-      "Microsoft.ApplicationInsights >= 2.0.1",
-      "Microsoft.ApplicationInsights.PersistenceChannel >= 1.2.3",
-      "Microsoft.ApplicationInsights.WindowsApps >= 1.1.1",
-      "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
-      "TagLib.Portable >= 1.0.4"
+      "Microsoft.NETCore.UniversalWindowsPlatform >= 5.0.0"
     ],
     "UAP,Version=v10.0": []
   }

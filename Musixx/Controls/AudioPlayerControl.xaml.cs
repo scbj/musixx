@@ -33,11 +33,13 @@ namespace Musixx.Controls
             this.InitializeComponent();
 
             timer = new DispatcherTimer();
-            timer.Interval = TimeSpan.FromMilliseconds(100);
+            timer.Interval = TimeSpan.FromMilliseconds(300);
             timer.Tick += Playing;
 
             this.slider.AddHandler(Thumb.PointerPressedEvent, new PointerEventHandler(SliderThumbPressed), true);
             this.slider.AddHandler(Thumb.PointerReleasedEvent, new PointerEventHandler(SliderThumbReleased), true);
+
+            player.MediaEnded += (s, e) => PlayEnded?.Invoke();
 
             PlayPauseCommand = new RelayCommand((s) =>
             {
@@ -80,6 +82,8 @@ namespace Musixx.Controls
                 OnPropertyChanged(nameof(IsPlaying));
             }
         }
+
+        public event Action PlayEnded;
 
         public ICommand PlayPauseCommand { get; set; }
 

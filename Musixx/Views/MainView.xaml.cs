@@ -31,6 +31,8 @@ namespace Musixx.Views
             DataContext = ViewModel = new MainViewModel();
             this.InitializeComponent();
             ViewModel.View = this;
+
+            audioPlayer.PlayEnded += () => audioPlayer.Play(ViewModel.Musics[new Random().Next(ViewModel.Musics.Count)]);
         }
 
         public MainViewModel ViewModel { get; set; }
