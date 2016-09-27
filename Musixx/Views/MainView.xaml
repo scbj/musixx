@@ -9,10 +9,6 @@
     xmlns:viewModels="using:Musixx.ViewModels"
     xmlns:views="using:Musixx.Views"
     mc:Ignorable="d">
-    <Page.Resources>
-        <MediaElement x:Name="mediaElement" AutoPlay="True" AreTransportControlsEnabled="True" AudioCategory="BackgroundCapableMedia" />
-    </Page.Resources>
-
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -47,8 +43,8 @@
                 </Grid.RowDefinitions>
 
                 <TextBlock Text="Morceaux" FontSize="24"/>
-                <ListView x:Name="listView_Musics" Grid.Row="1" Margin="0,12,0,0" Foreground="{ThemeResource SystemControlForegroundBaseMediumHighBrush}"
-                          ItemsSource="{Binding Musics}" DoubleTapped="listView_Musics_DoubleTapped">
+                <ListView x:Name="playlistView" Grid.Row="1" Margin="0,12,0,0" Foreground="{ThemeResource SystemControlForegroundBaseMediumHighBrush}"
+                          ItemsSource="{Binding Musics}">
                     <ListView.ItemContainerStyle>
                         <Style TargetType="ListViewItem">
                             <Setter Property="HorizontalContentAlignment" Value="Stretch"/>

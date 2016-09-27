@@ -3,7 +3,7 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace Musixx.Models
 {
-    public interface IMusic
+    public interface IMusicHOLD
     {
         string Title { get; }
         string Artist { get; }

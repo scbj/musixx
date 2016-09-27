@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Musixx.Shared.Models
 {
-    public class IFile
+    public interface IFile
     {
-        int Id { get; set; }
-        string Name { get; set; }
-        string MD5Hash { get; set; }
-        Uri Uri { get; set; }
+        string Id { get; }
+        string Name { get; }
+        string MD5 { get; }
+        long Size { get; }
+        Uri Uri { get; }
     }
 }

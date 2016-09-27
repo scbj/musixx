@@ -11,9 +11,9 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace Musixx.ViewModels
 {
-    public class MusicViewModel : ObservableObject, IMusic
+    public class MusicViewModel : ObservableObject, IMusicHOLD
     {
-        Music music;
+        MusicHOLD music;
 
         public string Title { get { return music.Title; } }
         public string Artist { get { return music.Artist; } }
@@ -23,7 +23,7 @@ namespace Musixx.ViewModels
         public Uri Uri { get { return music.Uri; } }
 
 
-        public MusicViewModel(Music music)
+        public MusicViewModel(MusicHOLD music)
         {
             this.music = music;
             music.MetadataRetreived += Music_MetadataRetreived;

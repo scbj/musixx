@@ -111,6 +111,7 @@
     <Compile Include="ApplicationSettingsHelper.cs" />
     <Compile Include="AppState.cs" />
     <Compile Include="BackgroundTask\BackgroundTaskState.cs" />
+    <Compile Include="EnumHelper.cs" />
     <Compile Include="Messages\AppResumedMessage.cs" />
     <Compile Include="Messages\AppSuspendedMessage.cs" />
     <Compile Include="Messages\BackgroundAudioTaskStartedMessage.cs" />

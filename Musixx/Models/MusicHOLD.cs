@@ -18,7 +18,7 @@ using Windows.Web.Http;
 
 namespace Musixx.Models
 {
-    public class Music : IMusic
+    public class MusicHOLD : IMusicHOLD
     {
         private string name;
         private string id;
@@ -27,13 +27,13 @@ namespace Musixx.Models
 
         public event Action MetadataRetreived;
 
-        public Music(string name, string url, long size)
+        public MusicHOLD(string name, string url, long size)
         {
             this.name = name;
             this.size = size;
             Title = Path.GetFileNameWithoutExtension(name);
             Uri = new Uri(url);
-            System.Diagnostics.Debug.WriteLine(url);
+            Debug.WriteLine(url);
 
             RetreiveMetadataALTERNATIVE();
         }

@@ -4,6 +4,7 @@ using Google.Apis.Drive.v2;
 using Google.Apis.Oauth2.v2;
 using Google.Apis.Services;
 using Musixx.Models;
+using Musixx.Shared.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -71,7 +72,7 @@ namespace Musixx.Clouds
             var userInfoPlus = await Oauth2Service.Userinfo.Get().ExecuteAsync();
             return new User(userInfoPlus.Name, userInfoPlus.Picture);
         }
-        public async Task<IEnumerable<Music>> GetMusics()
+        public async Task<IEnumerable<MusicHOLD>> GetMusics()
         {
             FilesResource.ListRequest listRequest = DriveService.Files.List();
             listRequest.MaxResults = 1000;
@@ -82,8 +83,31 @@ namespace Musixx.Clouds
 
             var baseUrl = "https://googledrive.com/host/";
 
-            return fileList.Items.Select(f => new Music(f.Title, baseUrl + f.Id + "?access_token=" + accessToken,
+            return fileList.Items.Select(f => new MusicHOLD(f.Title, baseUrl + f.Id + "?access_token=" + accessToken,
                 f.FileSize.HasValue ? f.FileSize.Value : 0));
+        }
+
+        public async Task<List<IMusic>> GetMusic()
+        {
+            FilesResource.ListRequest listRequest = DriveService.Files.List();
+            listRequest.MaxResults = 1000;
+            listRequest.Fields = "items(downloadUrl,fileExtension,fileSize,id,md5Checksum,title)";
+            listRequest.Q = "mimeType='audio/mp3' and trashed=false";
+
+            var fileList = await listRequest.ExecuteAsync();
+
+            const string baseUrl = "https://googledrive.com/host/";
+
+            var songs = new List<IMusic>();
+            foreach(var f in fileList.Items)
+            {
+                string path = baseUrl + f.Id + "?access_token=" + accessToken;
+                long size = f.FileSize.HasValue ? f.FileSize.Value : 0;
+                var file = new File(f.Id, f.Title, f.Md5Checksum, size, path);
+                songs.Add(new Song(file));
+            }
+
+            return songs;
         }
     }
 }

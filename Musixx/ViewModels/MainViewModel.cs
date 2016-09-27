@@ -5,10 +5,13 @@ using MVVM.Pattern__UWP_.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Windows.ApplicationModel.Core;
+using Windows.UI.Core;
 using Windows.UI.Xaml.Data;
 
 namespace Musixx.ViewModels
@@ -23,7 +26,7 @@ namespace Musixx.ViewModels
         private GoogleDrive cloud;
         private bool? loginState = false;
         private User user;
-        private ObservableCollection<MusicViewModel> musics;
+        private ObservableCollection<SongViewModel> musics = new ObservableCollection<SongViewModel>();
         private MusicViewModel currentPlaying;
 
         public MainViewModel()
@@ -44,8 +47,18 @@ namespace Musixx.ViewModels
             if (loginState.Value)
             {
                 User = await cloud.GetUser();
-                Musics = new ObservableCollection<MusicViewModel>((await cloud.GetMusics()).OrderBy(m => m.Title).Select(m => new MusicViewModel(m)));
-                
+                //Musics = new ObservableCollection<MusicViewModel>((await cloud.GetMusics()).OrderBy(m => m.Title).Select(m => new MusicViewModel(m)));
+                var songs = await cloud.GetMusic();
+                foreach(var s in songs.Cast<Song>())
+                {
+                    s.RetreiveMetadataAsync().ContinueWith(async (t) =>
+                    {
+                        await CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
+                        {
+                            musics.Add(new SongViewModel(s));
+                        });
+                    });
+                }
             }
         }
 
@@ -73,7 +86,7 @@ namespace Musixx.ViewModels
             }
         }
 
-        public ObservableCollection<MusicViewModel> Musics
+        public ObservableCollection<SongViewModel> Musics
         {
             get { return this.musics; }
             set

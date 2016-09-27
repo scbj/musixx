@@ -12,8 +12,9 @@ namespace Musixx.Shared.Models
         string Title { get; set; }
         string Artist { get; set; }
         string Album { get; set; }
-        TimeSpan Duration { get; }
+        TimeSpan Duration { get; set; }
         Uri CoverUri { get; set; }
-        Uri Uri { get; set; }
+        Uri Uri { get; }
+        IFile File { get; }
     }
 }

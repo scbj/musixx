@@ -20,15 +20,15 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Orientation="Horizontal">
-            <Image x:Name="cover" Source="ms-appx:///Assets/default_album.png" Width="70" Height="70" Margin="8"/>
+            <Image x:Name="cover" Source="{Binding CurrentSong.CoverUri, FallbackValue='ms-appx:///Assets/default_album.png'}" Width="70" Height="70" Margin="8"/>
             <Grid Margin="12,0,0,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-                <TextBlock x:Name="title" ToolTipService.ToolTip="{Binding Text, RelativeSource={RelativeSource Self}}" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FFA54955"/>
-                <TextBlock x:Name="artist" ToolTipService.ToolTip="{Binding Text, RelativeSource={RelativeSource Self}}" Grid.Row="1" VerticalAlignment="Top" FontWeight="Light" FontSize="14"/>
+                <TextBlock Text="{Binding CurrentSong.Title}" ToolTipService.ToolTip="{Binding Text, RelativeSource={RelativeSource Self}}" VerticalAlignment="Bottom" FontWeight="Bold" Foreground="#FFA54955"/>
+                <TextBlock Text="{Binding CurrentSong.Artist}" ToolTipService.ToolTip="{Binding Text, RelativeSource={RelativeSource Self}}" Grid.Row="1" VerticalAlignment="Top" FontWeight="Light" FontSize="14"/>
             </Grid>
         </StackPanel>
         <Grid Grid.Column="1">
@@ -53,9 +53,9 @@
                     <Setter Property="Margin" Value="8"/>
                 </Style>
             </StackPanel.Resources>
-            <Button Content="&#xE892;"/>
+            <Button Content="&#xE892;" IsEnabled="{Binding CanGoPrevious}"/>
             <Button Command="{Binding PlayPauseCommand}" Content="{Binding IsPlaying, Converter={StaticResource BoolToPlayPauseConverter}, FallbackValue=&#xE768;}"/>
-            <Button Content="&#xE893;"/>
+            <Button Content="&#xE893;" IsEnabled="{Binding CanGoNext}"/>
             <Button Content="&#xE767;"/>
             <Button Content="&#xE8B1;"/>
             <Button Content="&#xE8EE;"/>
